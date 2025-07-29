@@ -89,10 +89,10 @@ const Home = () => {
                 <h2 className='text-2xl font-bold text-[#181E4B]'>See What Our Clients Says<br/>About Us</h2>
                 <div className='m-4 bg-[#FFFFFF] rounded-xl p-4 mb-4'>
                   <Image src={'/assets/Ellipse 624.png'} height={100} width={100} className='mx-auto' alt='review'/>
-                  <p className='text-sm'>"Our family trip to Bali was flawless. <br/>
+                  <p className='text-sm'>&quot;Our family trip to Bali was flawless. <br/>
                       The itinerary was well-balanced with activities for both kids and adults.<br/>
                       The guided tours were informative and fun. <br/>
-                      Highly recommended!"</p>
+                      Highly recommended!&quot;</p>
                 </div>
               </div>
 
