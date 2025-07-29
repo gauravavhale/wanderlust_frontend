@@ -21,7 +21,7 @@ const Home = () => {
                 <h2 className='text-center text-white text-3xl md:text:4xl lg:text-5xl font-bold drop-shadow-lg'>
                   Discover the World with Wanderlust Travel Hub
                 </h2>
-                <p className='text-center text-white text:sm md:text-xl font-bold drop-shadow-lg mx-2'>Your journey begins here — from golden beaches to snow-capped mountains, we bring you closer to the places you’ve always dreamed of.</p>
+                <p className='text-center text-white text:sm md:text-xl font-bold drop-shadow-lg mx-2'>Your journey begins here from golden beaches to snow-capped mountains, we bring you closer to the places {`you’ve`} always dreamed of.</p>
                 <div className='flex gap-6 mt-4'>
                   <Link href={''} className='p-2 bg-[#DF6951] rounded-sm text-white text-sm'>Plan Your Trip</Link>
                   <Link href={''} className='p-2 bg-[#DF6951] rounded-sm text-white text-sm'>Explore Destinations</Link>
@@ -71,9 +71,9 @@ const Home = () => {
                   and soft white sands.Our handpicked tropical getaway is perfect<br/>
                   for couples seeking romance and serenity. Stroll along <br/>
                   palm-lined beaches, indulge in candlelit dinners by the ocean,<br/>
-                  and enjoy luxurious stays surrounded by nature’s beauty. <br/>
-                  Whether it’s a honeymoon, anniversary, or a spontaneous escape,<br/>
-                  this paradise promises memories you’ll cherish forever. ❤️</p>
+                  and enjoy luxurious stays surrounded by {`nature’s`} beauty. <br/>
+                  Whether {`it’s`} a honeymoon, anniversary, or a spontaneous escape,<br/>
+                  this paradise promises memories {`you’ll`} cherish forever. ❤️</p>
                 <Link href={''} className='p-2 text-sm text-white bg-[#DF6951] rounded-sm'>View Packages</Link>
               </div>
             </div>
