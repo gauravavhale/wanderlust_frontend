@@ -9,10 +9,10 @@ import { SlLocationPin } from "react-icons/sl";
 const Home = () => {
 
   const Categoryies = [
-    { src: '/assets/tour-guide 1.png', title:'Guided Tour', para:'From iconic landmarks to hidden gems, our guided tours give you the perfect travel experience.' },
-    { src: '/assets/travelling 1.png', title:'Best Flight Options', para:'From economy to first-class, our best flight options ensure comfort, convenience, and value.' },
-    { src: '/assets/hands 1.png', title:'Religious Tour', para:'Journey to sacred places and connect with your inner peace through our guided religious tours.' },
-    { src: '/assets/medical-team 1.png', title:'Medical Insurance', para:'From minor mishaps to emergencies, our travel medical insurance keeps you safe wherever.' },
+    { src: '/assets/001-tour-guide.png', title:'Guided Tour', para:'From iconic landmarks to hidden gems, our guided tours give you the perfect travel experience.' },
+    { src: '/assets/002-plane.png', title:'Best Flight Options', para:'From economy to first-class, our best flight options ensure comfort, convenience, and value.' },
+    { src: '/assets/003-pray.png', title:'Religious Tour', para:'Journey to sacred places and connect with your inner peace through our guided religious tours.' },
+    { src: '/assets/004-health-insurance.png', title:'Medical Insurance', para:'From minor mishaps to emergencies, our travel medical insurance keeps you safe wherever.' },
   ]
 
   const Trendings = [
@@ -27,14 +27,14 @@ const Home = () => {
           <div className='w-full h-[90vh] relative'>
             <Image src={'/assets/landing_image1.png'} alt='landing' fill className='object-cover' />
           
-              <div className='absolute inset-0 flex flex-col justify-center items-center'>
-                <h2 className='text-center text-white text-3xl md:text:4xl lg:text-5xl font-bold drop-shadow-lg'>
-                  Discover the World with Wanderlust Travel Hub
+              <div className='absolute inset-0 flex flex-col justify-center items-center text-center'>
+                <h2 className=' text-white text-2xl md:text:4xl lg:text-5xl font-bold font-serif drop-shadow-lg'>
+                  Wanderlust Travel Hub
                 </h2>
-                <p className='text-center text-white text:sm md:text-xl font-bold drop-shadow-lg mx-2'>Your journey begins here from golden beaches to snow-capped mountains, we bring you closer to the places {`you’ve`} always dreamed of.</p>
-                <div className='flex gap-6 mt-4'>
-                  <Link href={''} className='p-2 bg-[#DF6951] rounded-sm text-white text-sm'>Plan Your Trip</Link>
-                  <Link href={''} className='p-2 bg-[#DF6951] rounded-sm text-white text-sm'>Explore Destinations</Link>
+                <p className=' text-white text-lg md:text-2xl mt-2 font-serif drop-shadow-md'>No matter where <br/>you're going to, we'll<br/> take you there</p>
+                <div className='flex flex-wrap justify-center gap-6 mt-6'>
+                  <Link href={''} className='p-3 px-5 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Plan Your Trip</Link>
+                  <Link href={''} className='p-3 px-5 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Explore Destinations</Link>
                 </div>
               </div>
           </div>
@@ -77,7 +77,7 @@ const Home = () => {
               <div className='w-[70vw] mt-5 md:mt-0 md:w-1/2 content-center text-center md:ml-4 md:text-left'>
                 <p className='text-sm text-[#DF6951] font-bold'>HONEYMOON SPECIAL</p>
                 <h2 className='text-2xl font-bold text-[#181E4B]'>Our Romantic Tropical destinantion</h2>
-                <p className='text-sm mb-4'>Escape to a world where golden sunsets meet crystal-clear waters<br/>
+                <p className='text-sm mb-4 mt-2'>Escape to a world where golden sunsets meet crystal-clear waters<br/>
                   and soft white sands.Our handpicked tropical getaway is perfect<br/>
                   for couples seeking romance and serenity. Stroll along <br/>
                   palm-lined beaches, indulge in candlelit dinners by the ocean,<br/>
@@ -88,7 +88,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className=' relative h-[150px] md:h-[250px] lg:h-[300px]  mt-10'>
+            <div className=' relative h-[120px] md:h-[250px] lg:h-[300px]  mt-10'>
               <Image src={'/assets/Sepratir.png'} alt='Statue' fill className='object-cover' />
             </div>
 
@@ -96,7 +96,7 @@ const Home = () => {
 
               <div className='text-center'>
                 <p className='text-sm text-[#DF6951] font-bold mb-4'>TRENDY</p>
-                <h2 className='text-2xl font-bold text-[#181E4B]'>Our Trending Tour Packages</h2>
+                <h2 className='text-2xl font-bold text-[#181E4B] px-2'>Our Trending Tour Packages</h2>
               </div>
 
               <div className='w-full flex flex-col md:flex-row justify-center items-center gap-8 my-10'>
