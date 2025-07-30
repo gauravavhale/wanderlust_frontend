@@ -13,14 +13,31 @@ export const Navbar = () => {
     ]
 
   return (
-    <nav className="py-1 px-8 top-16 left-0 w-full z-1000 bg-[#F7F7F7]">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-    
-        <div className="text-2xl flex items-center ">
-          <Image src={'/images/wanderlust.png'} width={50} height={50} alt='Wanderlust'/>
-        </div>
+    <nav className='flex flex-row justify-around items-center py-2 shadow-md bg-white'>
+      <div className='flex-shrink-0'>
+        <Image src={"/images/wanderlust.png"}  height={50} width={50} alt='wanderlust'/>
+      </div>
+      <div className='flex gap-4 text-sm font-bold'>
+        {navLinks.map((link) => (
+            <Link
+            href={link.href}
+            key={link.label}
+            className="text-[#181E4B] hover:border-b-2 hover:border-b-[#DF6951] transition duration-300"
+            >
+            {link.label}
+            </Link>
+             ))}
+      </div>
+    </nav>
+  )
+}
 
-        <div className="flex gap-6 text-lg font-medium text-purple-950">
+
+// <div className=" flex items-center ">
+//           <Image src={'/images/wanderlust.png'} width={50} height={50} alt='Wanderlust'/>
+//         </div>
+
+{/* <div className="flex gap-6 text-lg font-medium text-purple-950">
             {navLinks.map((link) => (
             <Link
             href={link.href}
@@ -30,14 +47,4 @@ export const Navbar = () => {
             {link.label}
             </Link>
              ))}
-        </div>
-
-        <div>
-          <button className="hidden bg-[#DF6951] text-white px-4 py-2 rounded-sm ">
-            Get in Touch
-          </button>
-        </div>
-        </div>
-    </nav>
-  )
-}
+        </div> */}
