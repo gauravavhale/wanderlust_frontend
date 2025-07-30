@@ -1,6 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { CiCalendar } from "react-icons/ci";
+import { MdPersonOutline } from "react-icons/md";
+import { IoMdStar } from "react-icons/io";
+import { SlLocationPin } from "react-icons/sl";
 
 const Home = () => {
 
@@ -9,6 +13,12 @@ const Home = () => {
     { src: '/assets/travelling 1.png', title:'Best Flight Options', para:'From economy to first-class, our best flight options ensure comfort, convenience, and value.' },
     { src: '/assets/hands 1.png', title:'Religious Tour', para:'Journey to sacred places and connect with your inner peace through our guided religious tours.' },
     { src: '/assets/medical-team 1.png', title:'Medical Insurance', para:'From minor mishaps to emergencies, our travel medical insurance keeps you safe wherever.' },
+  ]
+
+  const Trendings = [
+    { src:'/assets/Rectangle 19305.png', alt:'switzerlaand' , days:'8',people:'25',destinantion:'Switzerland',country:'Europe',price:'1,000',cutoff:'1200',desc:'Experience the breathtaking beauty of Switzerland where snow-capped Alps meet crystal-clear lakes, charming villages, and vibrant cities. From scenic train rides to world-class skiing' },
+    { src:'/assets/Rectangle 19305-1.png', alt:'Amazon' , days:'8',people:'30',destinantion:'Amazon',country:'Brazil',price:'1,223',cutoff:'1200',desc:'Discover the breathtaking beauty of the Amazon, the world’s largest rainforest. Cruise along its mighty river, encounter exotic wildlife, and immerse yourself in vibrant indigenous cultures.' },
+    { src:'/assets/Rectangle 19305-2.png', alt:'Giza' , days:'8',people:'155',destinantion:'Giza',country:'Egypt',price:'1,200',cutoff:'1500',desc:'Discover the timeless wonders of Giza, home to the legendary Pyramids and the Great Sphinx. Walk through ancient history, marvel at breathtaking desert landscapes, and experience the magic of Egypt.' },
   ]
 
   return (
@@ -80,6 +90,57 @@ const Home = () => {
 
             <div className=' relative h-[150px] md:h-[250px] lg:h-[300px]  mt-10'>
               <Image src={'/assets/Sepratir.png'} alt='Statue' fill className='object-cover' />
+            </div>
+
+            <div className='w-full h-full mt-10'>
+
+              <div className='text-center'>
+                <p className='text-sm text-[#DF6951] font-bold mb-4'>TRENDY</p>
+                <h2 className='text-2xl font-bold text-[#181E4B]'>Our Trending Tour Packages</h2>
+              </div>
+
+              <div className='w-full flex flex-col md:flex-row justify-center items-center gap-8 my-10'>
+
+              {
+                Trendings.map((Trending)=>(
+              <div key={Trending.destinantion} className='w-[300px] flex flex-col  p-2'>
+                <div className='rounded-lg shadow-lg'>
+                  <Image src={Trending.src} alt={Trending.alt} className='object-cover w-full h-full' width={150} height={100}/>
+                </div>
+                <div className='mt-4'>
+                  <div className='flex flex-row items-center text-[#7D7D7D] text-sm' >
+                    <CiCalendar className='text-lg'/><p className='ml-2 mr-5'>{Trending.days} Days</p>
+                    <MdPersonOutline className='text-lg'/><p className='ml-2 '>{Trending.people} People Going</p>
+                  </div>
+                  <div className='flex flex-row items-center mt-2 justify-between' >
+                    <p className='text-xl font-bold text-[#181E4B]'>{Trending.destinantion}</p>
+                    <span className="text-[#FFBA0A] flex flex-row mr-6">
+                    <IoMdStar /><IoMdStar /><IoMdStar /><IoMdStar /><IoMdStar />
+                    </span>
+                  </div>
+                  <div className='flex flex-col text-[#7D7D7D] mt-1'>
+                    <div className='flex items-center text-sm'>
+                       <SlLocationPin /><span className='ml-2'>{Trending.country}</span>
+                    </div>
+                    <div className='flex items-center mt-2 mb-2'>
+                       <p className='text-xl mr-4 text-[#DF6951] font-bold'>{Trending.price} $</p><span className='text-[#7D7D7D] line-through'>{Trending.cutoff} $</span>
+                    </div>
+                    <div>
+                       <p className='text-xs text-[#181E4B]'>{Trending.desc}</p>
+                    </div>
+                    <div className='mt-4'>
+                      <Link className='bg-[#DF6951] p-2 text-white rounded-md text-sm' href={'/'}>Explore Now</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                ))
+              }
+              
+
+              </div>
+
             </div>
 
             <div className='bg-[#D9D9D9] w-full h-full flex justify-center items-center'>
