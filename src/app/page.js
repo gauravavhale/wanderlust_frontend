@@ -46,8 +46,6 @@ const Home = () => {
             <Image src={"/assets/Mask group-2.png"} alt='Airbnb' className='w-16 h-8 sm:w-24 sm:h-12 md:w-32 md:h-16' height={75} width={171}></Image>
           </div>
 
-          <div>
-
             <div>
               <div className='text-center my-10'>
                 <p className='text-red-500'>Category</p>
@@ -95,11 +93,11 @@ const Home = () => {
             <div className='w-full h-full mt-10'>
 
               <div className='text-center'>
-                <p className='text-sm text-[#DF6951] font-bold mb-4'>TRENDY</p>
+                <p className='text-sm text-[#DF6951] font-bold mb-3'>TRENDY</p>
                 <h2 className='text-2xl font-bold text-[#181E4B] px-2'>Our Trending Tour Packages</h2>
               </div>
 
-              <div className='w-full flex flex-col md:flex-row justify-center items-center gap-8 my-10'>
+              <div className='w-full flex flex-col md:flex-row justify-center items-center gap-8 my-5'>
 
               {
                 Trendings.map((Trending)=>(
@@ -148,19 +146,15 @@ const Home = () => {
               <div className='my-10 text-center'>
                 <p className='text-sm text-[#DF6951] font-bold mb-4'>PROMOTION</p>
                 <h2 className='text-2xl font-bold text-[#181E4B]'>See What Our Clients Says<br/>About Us</h2>
-                <div className='m-4 bg-[#FFFFFF] rounded-xl p-4 mb-4'>
+                <div className='m-4 bg-[#FFFFFF] rounded-xl p-4 pb-5 mb-4'>
                   <Image src={'/assets/Ellipse 624.png'} height={100} width={100} className='mx-auto' alt='review'/>
                   <p className='text-sm'>&quot;Our family trip to Bali was flawless. <br/>
-                      The itinerary was well-balanced with activities for both kids and adults.<br/>
+                      The itinerary was wellbalanced with activities for both kids and adults.<br/>
                       The guided tours were informative and fun. <br/>
                       Highly recommended!&quot;</p>
                 </div>
               </div>
-
             </div>
-
-          </div>
-
     </div>
   )
 }
