@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { BsPersonCircle } from "react-icons/bs";
 
 export const Navbar = () => {
 
@@ -8,8 +9,7 @@ export const Navbar = () => {
         { href:'/', label:'Home' },
         { href:'/destinantion', label:'Destinations' },
         { href:'/packages', label:'Packages '},
-        { href:'/blog', label:'Blog'},
-        { href:'/login', label:'Login'},
+        // { href:'/login', label:'Login'},
     ]
 
   return (
@@ -17,7 +17,7 @@ export const Navbar = () => {
       <div className='flex-shrink-0'>
         <Image src={"/images/wanderlust.png"}  height={50} width={50} alt='wanderlust'/>
       </div>
-      <div className='flex gap-4 text-sm font-bold'>
+      <div className='flex gap-4 md:gap-10 text-sm md:text-lg font-bold'>
         {navLinks.map((link) => (
             <Link
             href={link.href}
@@ -28,23 +28,10 @@ export const Navbar = () => {
             </Link>
              ))}
       </div>
+      <div>
+        <Link href={'/'} className='text-lg md:text-xl font-bold text-[#181E4B] hover:text-[#DF6951] transition duration-300'><BsPersonCircle /></Link>
+      </div>
     </nav>
   )
 }
 
-
-// <div className=" flex items-center ">
-//           <Image src={'/images/wanderlust.png'} width={50} height={50} alt='Wanderlust'/>
-//         </div>
-
-{/* <div className="flex gap-6 text-lg font-medium text-purple-950">
-            {navLinks.map((link) => (
-            <Link
-            href={link.href}
-            key={link.label}
-            className="hover:border-b-[#DF6951] transition"
-            >
-            {link.label}
-            </Link>
-             ))}
-        </div> */}
