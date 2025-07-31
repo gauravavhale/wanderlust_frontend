@@ -33,8 +33,8 @@ const Home = () => {
                 </h2>
                 <p className=' text-white text-lg md:text-2xl mt-2 font-serif drop-shadow-md'>No matter where <br/>you&apos;re going to, we&apos;ll<br/> take you there</p>
                 <div className='flex flex-wrap justify-center gap-6 mt-6'>
-                  <Link href={''} className='p-3 px-5 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Plan Your Trip</Link>
-                  <Link href={''} className='p-3 px-5 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Explore Destinations</Link>
+                  <Link href={''} className='p-2 px-3 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Plan Your Trip</Link>
+                  <Link href={''} className='p-2 px-3 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Explore Destinations</Link>
                 </div>
               </div>
           </div>

@@ -13,11 +13,11 @@ export const Navbar = () => {
     ]
 
   return (
-    <nav className='flex flex-row justify-around items-center py-2 shadow-md bg-white'>
+    <nav className='flex flex-row justify-around items-center py-2 px-2 shadow-md bg-white'>
       <div className='flex-shrink-0'>
         <Image src={"/images/wanderlust.png"}  height={50} width={50} alt='wanderlust'/>
       </div>
-      <div className='flex gap-4 md:gap-10 text-sm md:text-lg font-bold'>
+      <div className='flex gap-3.5 md:gap-10 text-sm md:text-lg font-bold'>
         {navLinks.map((link) => (
             <Link
             href={link.href}
