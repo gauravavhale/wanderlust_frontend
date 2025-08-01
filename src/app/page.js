@@ -16,9 +16,9 @@ const Home = () => {
   ]
 
   const Trendings = [
-    { src:'/assets/Rectangle 19305.png', alt:'switzerlaand' , days:'8',people:'25',destinantion:'Switzerland',country:'Europe',price:'1,000',cutoff:'1200',desc:'Experience the breathtaking beauty of Switzerland where snow-capped Alps meet crystal-clear lakes, charming villages, and vibrant cities. From scenic train rides to world-class skiing' },
-    { src:'/assets/Rectangle 19305-1.png', alt:'Amazon' , days:'8',people:'30',destinantion:'Amazon',country:'Brazil',price:'1,223',cutoff:'1200',desc:'Discover the breathtaking beauty of the Amazon, the world’s largest rainforest. Cruise along its mighty river, encounter exotic wildlife, and immerse yourself in vibrant indigenous cultures.' },
-    { src:'/assets/Rectangle 19305-2.png', alt:'Giza' , days:'8',people:'155',destinantion:'Giza',country:'Egypt',price:'1,200',cutoff:'1500',desc:'Discover the timeless wonders of Giza, home to the legendary Pyramids and the Great Sphinx. Walk through ancient history, marvel at breathtaking desert landscapes, and experience the magic of Egypt.' },
+    { src:'/assets/switzerland1.webp', alt:'switzerlaand' , days:'8',people:'25',destinantion:'Switzerland',country:'Europe',price:'1,000',cutoff:'1200',desc:'Experience the breathtaking beauty of Switzerland where snow-capped Alps meet crystal-clear lakes, charming villages, and vibrant cities. From scenic train rides to world-class skiing' },
+    { src:'/assets/brazil1.png', alt:'Amazon' , days:'8',people:'30',destinantion:'Amazon',country:'Brazil',price:'1,223',cutoff:'1200',desc:'Discover the breathtaking beauty of the Amazon, the world’s largest rainforest. Cruise along its mighty river, encounter exotic wildlife, and immerse yourself in vibrant indigenous cultures.' },
+    { src:'/assets/giza1.png', alt:'Giza' , days:'8',people:'155',destinantion:'Giza',country:'Egypt',price:'1,200',cutoff:'1500',desc:'Discover the timeless wonders of Giza, home to the legendary Pyramids and the Great Sphinx. Walk through ancient history, marvel at breathtaking desert landscapes, and experience the magic of Egypt.' },
   ]
 
   return (
@@ -90,7 +90,7 @@ const Home = () => {
               <Image src={'/assets/Sepratir.png'} alt='Statue' fill className='object-cover' />
             </div>
 
-            <div className='w-full h-full mt-10'>
+            <div className='w-full h-full my-10'>
 
               <div className='text-center'>
                 <p className='text-sm text-[#DF6951] font-bold mb-3'>TRENDY</p>

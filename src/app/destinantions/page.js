@@ -6,7 +6,7 @@ const Destinantion = () => {
 
   const Destinantion = [
     { src:'/assets/bali.jpg',loc:'Bali'},{ src:'/assets/dubai.jpg',loc:'Dubai'},{ src:'/assets/italy.jpg',loc:'Italy'},{ src:'/assets/laddakh.jpg',loc:'Laddakh'},{ src:'/assets/maldives.jpg',loc:'Maldives'},{ src:'/assets/paris.jpg',loc:'Paris'},
-    { src:'/assets/srilanka.jpg',loc:'SriLanka'},{ src:'/assets/spain.jpg',loc:'Spain'},{ src:'/assets/brazil.jpg',loc:'Brazil'},{ src:'/assets/giza.jpg',loc:'Giza'},{ src:'/assets/switzerland.jpg',loc:'Switzerland'},{ src:'/assets/sweden.jpg',loc:'Sweden'},
+    { src:'/assets/srilanka.jpg',loc:'SriLanka'},{ src:'/assets/spain.jpg',loc:'Spain'},{ src:'/assets/brazil2.jpg',loc:'Brazil'},{ src:'/assets/giza2.jpg',loc:'Giza'},{ src:'/assets/switzerland2.jpg',loc:'Switzerland'},{ src:'/assets/sweden.jpg',loc:'Sweden'},
   ]
 
   return (
