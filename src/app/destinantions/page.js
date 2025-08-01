@@ -33,7 +33,7 @@ const Destinantion = () => {
 
       <div className='w-full h-full  my-[50px] px-4'>
 
-        <div className='w-full flex flex-col items-center'>
+        <div className='w-full flex flex-col justify-center items-center text-center'>
           <p className='text-sm text-[#DF6951] font-bold'>EXPLORE MORE</p>
           <p className='text-2xl font-bold text-[#181E4B]'>Our International Destinantion</p>
         </div>
@@ -43,7 +43,7 @@ const Destinantion = () => {
             {Destinantion.map((destiny) => (
               <div key={destiny.src} className='relative'>
                 <Image src={destiny.src} key={destiny.src} height={100} width={100} className='w-[150px] h-[150px] md:w-[300px] md:h-[300px] object-cover rounded-lg' alt='Bali'/>
-                <p className='absolute bottom-4 w-full text-center text-[#DF6951] text-sm font-bold bg-gray-200 bg-opacity-60 py-1'>
+                <p className='absolute bottom-4 w-full text-center text-[#DF6951] text-xs font-bold bg-gray-200 bg-opacity-60 py-1'>
                   {destiny.loc}
                 </p>
               </div>
@@ -53,6 +53,17 @@ const Destinantion = () => {
 
       </div>
 
+      <div className="flex flex-col items-center mt-10 bg-[#fae1d7] p-6 px-8 shadow">
+        <h3 className="text-xl font-bold text-[#181E4B] mb-4">
+          Travel Tips for Your Next Adventure ✈️
+        </h3>
+        <ul className="list-disc pl-5 text-gray-700 space-y-2">
+          <li>Book flights and accommodations in advance for the best deals.</li>
+          <li>Check visa requirements for your destination.</li>
+          <li>Learn a few local phrases to connect with locals.</li>
+          <li>Always keep a digital and printed copy of important documents.</li>
+        </ul>
+      </div>
 
     </div>
   )
