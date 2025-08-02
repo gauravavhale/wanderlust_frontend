@@ -22,12 +22,12 @@ const Packages = () => {
                 <button>Name (A - Z)</button>
             </div>
 
-            <div className="m-4 flex flex-col md:flex-row md:flex-wrap justify-center gap-4 md:w-[80vw]">
+            <div className="m-4 flex flex-col md:flex-row md:flex-wrap justify-center gap-3 md:gap-5 md:w-[80vw]">
 
                 {
                     Destinantion.map((destiny)=>(
                         <div key={destiny.loc} className='flex flex-row mb-4 md:mb-0 md:flex-col gap-2 bg-white border border-gray-200 rounded-xl shadow-md p-2 md:p-4 w-[full] md:w-[300px]'>
-                            <Image src={destiny.src} width={100} height={100} className='w-[150px] h-[190px] md:w-[300px] md:h-[300px] rounded-lg object-cover' alt={destiny.loc}/>
+                            <Image src={destiny.src} width={100} height={100} className='w-[150px] h-[220px] md:w-[300px] md:h-[300px] rounded-lg object-cover' alt={destiny.loc}/>
                             <div className='text-[#181E4B] flex flex-col justify-center items-start'>
                                 <p className='font-bold text-xl '>{destiny.loc}</p>
                                 <p className=' text-xs md:text-sm text-gray-600 line-clamp-4'>{destiny.text}</p>
