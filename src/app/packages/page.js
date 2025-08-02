@@ -31,14 +31,14 @@ const Packages = () => {
                             <div className='text-[#181E4B] flex flex-col justify-center items-start'>
                                 <p className='font-bold text-xl '>{destiny.loc}</p>
                                 <p className=' text-xs md:text-sm text-gray-600 line-clamp-4'>{destiny.text}</p>
-                                <div className="mt-2 flex items-center gap-2">
+                                <div className="mt-2 flex flex-col md:flex-row items-start md:items-center gap-2">
                                     <span className="text-lg font-semibold text-[#DF6951]">{destiny.price} Rs</span> 
                                     <span className="text-yellow-500 font-medium">⭐ {destiny.stars}</span>
                                 </div>
                                 <div className='mt-2 flex flex-col md:flex-row items-start space-x-3'>
                                     <Link href={'/'} className='text-sm text-white py-1 px-2 rounded-md bg-[#DF6951]' >Book Now</Link>
                                     <div className='flex flex-row mt-2 md:mt-0'>
-                                    <CiCalendar /><span className='text-xs ml-1 mr-6'>12/08</span><BsFillPeopleFill /><span className='text-xs ml-1'>120+ People</span>
+                                    <CiCalendar /><span className='text-xs ml-1 mr-6'>12/08</span><BsFillPeopleFill /><span className='text-xs ml-1'>120+</span>
                                     </div>
                                 </div>
                             </div>
