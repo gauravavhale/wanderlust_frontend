@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { CiCalendar } from "react-icons/ci";
+import { BsFillPeopleFill } from "react-icons/bs";
 
 const Packages = () => {
 
@@ -24,15 +26,20 @@ const Packages = () => {
 
                 {
                     Destinantion.map((destiny)=>(
-                        <div key={destiny.loc} className='flex flex-row mb-4 md:mb-0 md:flex-col px-4 gap-2 bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 p-4 w-[full] md:w-[300px]'>
-                            <Image src={destiny.src} width={100} height={100} className='hover:-scale-50 w-[150px] h-[150px] md:w-[300px] md:h-[300px] rounded-lg object-cover' alt={destiny.loc}/>
+                        <div key={destiny.loc} className='flex flex-row mb-4 md:mb-0 md:flex-col gap-2 bg-white border border-gray-200 rounded-xl shadow-md p-2 md:p-4 w-[full] md:w-[300px]'>
+                            <Image src={destiny.src} width={100} height={100} className='w-[150px] h-[190px] md:w-[300px] md:h-[300px] rounded-lg object-cover' alt={destiny.loc}/>
                             <div className='text-[#181E4B] flex flex-col justify-center items-start'>
                                 <p className='font-bold text-xl '>{destiny.loc}</p>
-                                <p className='text-sm text-gray-600 line-clamp-4'>{destiny.text}</p>
+                                <p className=' text-xs md:text-sm text-gray-600 line-clamp-4'>{destiny.text}</p>
                                 <div className="mt-2 flex items-center gap-2">
                                     <span className="text-lg font-semibold text-[#DF6951]">{destiny.price} Rs</span> 
                                     <span className="text-yellow-500 font-medium">⭐ {destiny.stars}</span>
+                                </div>
+                                <div className='mt-2 flex flex-col md:flex-row items-start space-x-3'>
                                     <Link href={'/'} className='text-sm text-white py-1 px-2 rounded-md bg-[#DF6951]' >Book Now</Link>
+                                    <div className='flex flex-row mt-2 md:mt-0'>
+                                    <CiCalendar /><span className='text-xs ml-1 mr-6'>12/08</span><BsFillPeopleFill /><span className='text-xs ml-1'>120+ People</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
