@@ -1,0 +1,422 @@
+[
+  {
+    "location": "Bali",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Departure",
+        "description": "Arrive at Ngurah Rai International Airport and transfer to your resort. Evening free for relaxation.",
+        "inclusions": ["4 Star Accommodation", "Breakfast", "Airport Transfer"]
+      },
+      {
+        "day": 2,
+        "title": "Ubud & Rice Terraces",
+        "description": "Explore Ubud’s cultural heart, Tegallalang rice terraces, and Monkey Forest.",
+        "inclusions": ["4 Star Accommodation", "Breakfast", "Local Tour Guide"]
+      },
+      {
+        "day": 3,
+        "title": "Beach & Water Sports",
+        "description": "Spend the day at Nusa Dua Beach enjoying snorkeling, surfing, and sunbathing.",
+        "inclusions": ["4 Star Accommodation", "Breakfast", "Beach Access"]
+      },
+      {
+        "day": 4,
+        "title": "Temple Visits",
+        "description": "Visit Tanah Lot and Uluwatu Temples, enjoy Kecak fire dance at sunset.",
+        "inclusions": ["4 Star Accommodation", "Breakfast", "Transport"]
+      },
+      {
+        "day": 5,
+        "title": "Return",
+        "description": "Final morning at leisure before flight home.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "location": "Dubai",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Arrival & Marina Cruise",
+        "description": "Arrive in Dubai, check in, and enjoy a dhow cruise dinner at Dubai Marina.",
+        "inclusions": ["5 Star Accommodation", "Dinner", "Airport Pickup"]
+      },
+      {
+        "day": 2,
+        "title": "City Tour & Burj Khalifa",
+        "description": "Explore Dubai Mall, Burj Khalifa, and Dubai Fountain Show.",
+        "inclusions": ["5 Star Accommodation", "Breakfast", "City Tour"]
+      },
+      {
+        "day": 3,
+        "title": "Desert Safari",
+        "description": "Experience dune bashing, camel rides, and desert camp dinner.",
+        "inclusions": ["5 Star Accommodation", "Breakfast", "Desert Safari Experience"]
+      },
+      {
+        "day": 4,
+        "title": "Old Dubai & Souks",
+        "description": "Visit Dubai Creek, Gold Souk, and Spice Souk.",
+        "inclusions": ["5 Star Accommodation", "Breakfast", "Guide"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Last-minute shopping before departure.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "location": "Ladakh",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Arrival in Leh",
+        "description": "Arrive at Leh and rest for acclimatization.",
+        "inclusions": ["Local Guesthouse Stay", "Dinner", "Airport Pickup"]
+      },
+      {
+        "day": 2,
+        "title": "Monastery Tour",
+        "description": "Visit Hemis, Thiksey, and Shey Monasteries.",
+        "inclusions": ["Local Guesthouse Stay", "Breakfast & Dinner", "Local Guide"]
+      },
+      {
+        "day": 3,
+        "title": "Pangong Lake",
+        "description": "Drive to Pangong Lake for breathtaking views.",
+        "inclusions": ["Local Guesthouse Stay", "Breakfast & Dinner", "Transport"]
+      },
+      {
+        "day": 4,
+        "title": "Nubra Valley",
+        "description": "Explore Diskit Monastery and Hunder Sand Dunes.",
+        "inclusions": ["Local Guesthouse Stay", "Breakfast & Dinner", "Guide"]
+      },
+      {
+        "day": 5,
+        "title": "Return",
+        "description": "Return to Leh and depart.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "location": "Maldives",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Arrival & Resort Check-In",
+        "description": "Arrive in Male and take a speedboat to your overwater villa.",
+        "inclusions": ["Overwater Villa Stay", "Dinner", "Airport Transfer"]
+      },
+      {
+        "day": 2,
+        "title": "Snorkeling & Diving",
+        "description": "Explore coral reefs and marine life.",
+        "inclusions": ["Overwater Villa Stay", "Breakfast & Dinner", "Snorkeling Tour"]
+      },
+      {
+        "day": 3,
+        "title": "Water Sports",
+        "description": "Enjoy jet skiing, parasailing, and kayaking.",
+        "inclusions": ["Overwater Villa Stay", "Breakfast & Dinner", "Water Sports Access"]
+      },
+      {
+        "day": 4,
+        "title": "Island Hopping",
+        "description": "Visit nearby islands and enjoy a picnic lunch.",
+        "inclusions": ["Overwater Villa Stay", "Breakfast & Dinner", "Boat Ride"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Leisurely morning before speedboat transfer to the airport.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "location": "Paris",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Arrival & Seine River Cruise",
+        "description": "Arrive in Paris and enjoy a sunset cruise on the Seine River.",
+        "inclusions": ["4 Star Hotel Stay", "Dinner", "Airport Pickup"]
+      },
+      {
+        "day": 2,
+        "title": "Eiffel Tower & Louvre",
+        "description": "Visit Eiffel Tower, Louvre Museum, and Champs-Élysées.",
+        "inclusions": ["4 Star Hotel Stay", "Breakfast", "City Tour Guide"]
+      },
+      {
+        "day": 3,
+        "title": "Montmartre & Art Tour",
+        "description": "Explore Montmartre, Sacré-Cœur, and local art galleries.",
+        "inclusions": ["4 Star Hotel Stay", "Breakfast", "Guide"]
+      },
+      {
+        "day": 4,
+        "title": "Versailles Day Trip",
+        "description": "Tour the Palace of Versailles and its gardens.",
+        "inclusions": ["4 Star Hotel Stay", "Breakfast", "Transport"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Free time for shopping before flight.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "location": "Sri Lanka",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Arrival & Colombo City Tour",
+        "description": "Arrive in Colombo and check into your hotel. Evening city tour covering Galle Face Green, Independence Square, and Pettah Market.",
+        "inclusions": ["3 Star Accommodation", "Dinner", "Airport Pickup"]
+      },
+      {
+        "day": 2,
+        "title": "Kandy & Cultural Show",
+        "description": "Drive to Kandy, visit Temple of the Tooth, and enjoy a traditional cultural dance performance.",
+        "inclusions": ["3 Star Accommodation", "Breakfast", "Transport"]
+      },
+      {
+        "day": 3,
+        "title": "Sigiriya Rock Fortress",
+        "description": "Climb the UNESCO-listed Sigiriya Rock and explore surrounding gardens and frescoes.",
+        "inclusions": ["3 Star Accommodation", "Breakfast", "Guide"]
+      },
+      {
+        "day": 4,
+        "title": "Bentota Beach Relaxation",
+        "description": "Travel to Bentota for water sports and beach relaxation.",
+        "inclusions": ["3 Star Accommodation", "Breakfast", "Water Sports Access"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Return to Colombo for your flight home.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "location": "Spain",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Arrival & Tapas Night",
+        "description": "Arrive in Barcelona, check in, and enjoy a tapas tasting tour in the evening.",
+        "inclusions": ["4 Star Hotel Stay", "Dinner", "Airport Pickup"]
+      },
+      {
+        "day": 2,
+        "title": "Gaudí & Gothic Quarter",
+        "description": "Visit Sagrada Familia, Park Güell, and stroll through the Gothic Quarter.",
+        "inclusions": ["4 Star Hotel Stay", "Breakfast", "City Tour Guide"]
+      },
+      {
+        "day": 3,
+        "title": "Montserrat Day Trip",
+        "description": "Day trip to Montserrat Monastery with panoramic views.",
+        "inclusions": ["4 Star Hotel Stay", "Breakfast", "Transport"]
+      },
+      {
+        "day": 4,
+        "title": "Beach Day & Flamenco",
+        "description": "Relax at Barceloneta Beach and enjoy a flamenco show in the evening.",
+        "inclusions": ["4 Star Hotel Stay", "Breakfast", "Show Tickets"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Free time for shopping before departure.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "location": "Brazil",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Arrival & Copacabana Beach",
+        "description": "Arrive in Rio de Janeiro, check in, and relax at the iconic Copacabana Beach.",
+        "inclusions": ["4 Star Hotel", "Dinner", "Airport Pickup"]
+      },
+      {
+        "day": 2,
+        "title": "Christ the Redeemer & Sugarloaf",
+        "description": "Visit Christ the Redeemer statue and take a cable car to Sugarloaf Mountain.",
+        "inclusions": ["4 Star Hotel", "Breakfast", "City Tour"]
+      },
+      {
+        "day": 3,
+        "title": "Samba Night & Lapa",
+        "description": "Experience Rio’s nightlife with samba music and dancing in Lapa.",
+        "inclusions": ["4 Star Hotel", "Breakfast", "Guide"]
+      },
+      {
+        "day": 4,
+        "title": "Tijuca Forest & Beaches",
+        "description": "Hike in Tijuca National Park and relax at Ipanema Beach.",
+        "inclusions": ["4 Star Hotel", "Breakfast", "Transport"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Final morning at leisure before transfer to the airport.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "location": "Giza",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Arrival & Light Show",
+        "description": "Arrive in Cairo and check into your hotel. Evening Pyramids Sound & Light Show.",
+        "inclusions": ["3 Star Hotel", "Dinner", "Airport Pickup"]
+      },
+      {
+        "day": 2,
+        "title": "Pyramids & Sphinx",
+        "description": "Guided tour of the Pyramids of Giza and the Great Sphinx.",
+        "inclusions": ["3 Star Hotel", "Breakfast", "Guide"]
+      },
+      {
+        "day": 3,
+        "title": "Egyptian Museum & Bazaars",
+        "description": "Visit the Egyptian Museum followed by Khan el-Khalili Bazaar shopping.",
+        "inclusions": ["3 Star Hotel", "Breakfast", "Transport"]
+      },
+      {
+        "day": 4,
+        "title": "Saqqara & Memphis",
+        "description": "Day trip to the ancient necropolis of Saqqara and the old capital Memphis.",
+        "inclusions": ["3 Star Hotel", "Breakfast", "Guide"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Free time before transfer to the airport.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "location": "Switzerland",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Arrival & Zurich City Walk",
+        "description": "Arrive in Zurich, check in, and enjoy an evening stroll through Bahnhofstrasse.",
+        "inclusions": ["5 Star Accommodations", "Dinner", "Airport Transfer"]
+      },
+      {
+        "day": 2,
+        "title": "Lucerne & Mount Pilatus",
+        "description": "Day trip to Lucerne and a cable car ride up Mount Pilatus.",
+        "inclusions": ["5 Star Accommodations", "Breakfast", "Transport"]
+      },
+      {
+        "day": 3,
+        "title": "Interlaken & Jungfraujoch",
+        "description": "Full-day excursion to Jungfraujoch, the Top of Europe.",
+        "inclusions": ["5 Star Accommodations", "Breakfast", "Train Tickets"]
+      },
+      {
+        "day": 4,
+        "title": "Lake Geneva & Montreux",
+        "description": "Visit Lake Geneva, Montreux, and Chillon Castle.",
+        "inclusions": ["5 Star Accommodations", "Breakfast", "Guide"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Leisurely morning before transfer to airport.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "location": "Sweden",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Arrival & Gamla Stan",
+        "description": "Arrive in Stockholm, check in, and explore the old town Gamla Stan.",
+        "inclusions": ["4 Star Hotel", "Dinner", "Airport Pickup"]
+      },
+      {
+        "day": 2,
+        "title": "City Tour & Vasa Museum",
+        "description": "Visit Stockholm City Hall, Royal Palace, and Vasa Museum.",
+        "inclusions": ["4 Star Hotel", "Breakfast", "City Tour Guide"]
+      },
+      {
+        "day": 3,
+        "title": "Archipelago Boat Trip",
+        "description": "Full-day boat trip exploring the Stockholm Archipelago.",
+        "inclusions": ["4 Star Hotel", "Breakfast", "Boat Tickets"]
+      },
+      {
+        "day": 4,
+        "title": "Uppsala Day Trip",
+        "description": "Visit the historic university town of Uppsala.",
+        "inclusions": ["4 Star Hotel", "Breakfast", "Transport"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Free morning before departure.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  },
+  {
+    "location": "Italy",
+    "tourPlan": [
+      {
+        "day": 1,
+        "title": "Arrival & Rome Evening Walk",
+        "description": "Arrive in Rome, check in, and enjoy an evening walk through Piazza Navona and the Trevi Fountain.",
+        "inclusions": ["4 Star Hotel Stay", "Dinner", "Airport Pickup"]
+      },
+      {
+        "day": 2,
+        "title": "Ancient Rome Tour",
+        "description": "Visit the Colosseum, Roman Forum, and Palatine Hill.",
+        "inclusions": ["4 Star Hotel Stay", "Breakfast", "Guide"]
+      },
+      {
+        "day": 3,
+        "title": "Florence Art & Culture",
+        "description": "Travel to Florence and visit the Uffizi Gallery and Duomo.",
+        "inclusions": ["4 Star Hotel Stay", "Breakfast", "Train Tickets"]
+      },
+      {
+        "day": 4,
+        "title": "Venice Canal Experience",
+        "description": "Gondola ride through Venice canals and visit St. Mark's Basilica.",
+        "inclusions": ["4 Star Hotel Stay", "Breakfast", "Boat Ride"]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Leisurely breakfast before transfer to airport.",
+        "inclusions": ["Breakfast", "Airport Transfer"]
+      }
+    ]
+  }
+]
