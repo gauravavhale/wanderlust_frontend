@@ -16,9 +16,9 @@ const Home = () => {
   ]
 
   const Trendings = [
-    { src:'/assets/switzerland1.webp', alt:'switzerlaand' , days:'8',people:'25',destinantion:'Switzerland',country:'Europe',price:'1,000',cutoff:'1200',desc:'Experience the breathtaking beauty of Switzerland where snow-capped Alps meet crystal-clear lakes, charming villages, and vibrant cities. From scenic train rides to world-class skiing' },
-    { src:'/assets/brazil1.png', alt:'Amazon' , days:'8',people:'30',destinantion:'Amazon',country:'Brazil',price:'1,223',cutoff:'1200',desc:'Discover the breathtaking beauty of the Amazon, the world’s largest rainforest. Cruise along its mighty river, encounter exotic wildlife, and immerse yourself in vibrant indigenous cultures.' },
-    { src:'/assets/giza1.png', alt:'Giza' , days:'8',people:'155',destinantion:'Giza',country:'Egypt',price:'1,200',cutoff:'1500',desc:'Discover the timeless wonders of Giza, home to the legendary Pyramids and the Great Sphinx. Walk through ancient history, marvel at breathtaking desert landscapes, and experience the magic of Egypt.' },
+    { src:'/assets/switzerland1.webp', alt:'switzerlaand' , days:'8',people:'25',loc:'Switzerland',country:'Europe',price:'1,000',cutoff:'1200',desc:'Experience the breathtaking beauty of Switzerland where snow-capped Alps meet crystal-clear lakes, charming villages, and vibrant cities. From scenic train rides to world-class skiing' },
+    { src:'/assets/brazil1.png', alt:'Amazon' , days:'8',people:'30',loc:'Brazil',country:'Brazil',price:'1,223',cutoff:'1200',desc:'Discover the breathtaking beauty of the Amazon, the world’s largest rainforest. Cruise along its mighty river, encounter exotic wildlife, and immerse yourself in vibrant indigenous cultures.' },
+    { src:'/assets/giza1.png', alt:'Giza' , days:'8',people:'155',loc:'Giza',country:'Egypt',price:'1,200',cutoff:'1500',desc:'Discover the timeless wonders of Giza, home to the legendary Pyramids and the Great Sphinx. Walk through ancient history, marvel at breathtaking desert landscapes, and experience the magic of Egypt.' },
   ]
 
   return (
@@ -33,8 +33,8 @@ const Home = () => {
                 </h2>
                 <p className=' text-white text-lg md:text-2xl mt-2 font-serif drop-shadow-md'>No matter where <br/>you&apos;re going to, we&apos;ll<br/> take you there</p>
                 <div className='flex flex-wrap justify-center gap-6 mt-6'>
-                  <Link href={''} className='p-2 px-3 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Plan Your Trip</Link>
-                  <Link href={''} className='p-2 px-3 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Explore Destinations</Link>
+                  <Link href={'/packages'} className='p-2 px-3 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Plan Your Trip</Link>
+                  <Link href={'/destinations'} className='p-2 px-3 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Explore Destinations</Link>
                 </div>
               </div>
           </div>
@@ -82,7 +82,7 @@ const Home = () => {
                   and enjoy luxurious stays surrounded by {`nature’s`} beauty. <br/>
                   Whether {`it’s`} a honeymoon, anniversary, or a spontaneous escape,<br/>
                   this paradise promises memories {`you’ll`} cherish forever. ❤️</p>
-                <Link href={''} className='p-2 text-sm text-white bg-[#DF6951] rounded-sm'>View Packages</Link>
+                <Link href={'/packages'} className='p-2 text-sm text-white bg-[#DF6951] rounded-sm'>View Packages</Link>
               </div>
             </div>
 
@@ -101,7 +101,7 @@ const Home = () => {
 
               {
                 Trendings.map((Trending)=>(
-              <div key={Trending.destinantion} className='w-[300px] flex flex-col  p-2'>
+              <div key={Trending.loc} className='w-[300px] flex flex-col  p-2'>
                 <div className='rounded-lg shadow-lg'>
                   <Image src={Trending.src} alt={Trending.alt} className='object-cover w-full h-full' width={150} height={100}/>
                 </div>
@@ -111,7 +111,7 @@ const Home = () => {
                     <MdPersonOutline className='text-lg'/><p className='ml-2 '>{Trending.people} People Going</p>
                   </div>
                   <div className='flex flex-row items-center mt-2 justify-between' >
-                    <p className='text-xl font-bold text-[#181E4B]'>{Trending.destinantion}</p>
+                    <p className='text-xl font-bold text-[#181E4B]'>{Trending.loc}</p>
                     <span className="text-[#FFBA0A] flex flex-row mr-6">
                     <IoMdStar /><IoMdStar /><IoMdStar /><IoMdStar /><IoMdStar />
                     </span>
@@ -127,7 +127,7 @@ const Home = () => {
                        <p className='text-xs text-[#181E4B]'>{Trending.desc}</p>
                     </div>
                     <div className='mt-4'>
-                      <Link className='bg-[#DF6951] p-2 text-white rounded-md text-sm' href={'/'}>Explore Now</Link>
+                      <Link href={`/packages/${Trending.loc}`} className='bg-[#DF6951] p-2 text-white rounded-md text-sm' >Explore Now</Link>
                     </div>
                   </div>
                 </div>

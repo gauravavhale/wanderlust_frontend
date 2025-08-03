@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 
-const Destinantion = () => {
+const Destination = () => {
 
   const Destinantion = [
     { src:'/assets/bali.jpg',loc:'Bali'},{ src:'/assets/dubai.jpg',loc:'Dubai'},{ src:'/assets/italy.jpg',loc:'Italy'},{ src:'/assets/laddakh.jpg',loc:'Laddakh'},{ src:'/assets/maldives.jpg',loc:'Maldives'},{ src:'/assets/paris.jpg',loc:'Paris'},
@@ -69,4 +69,4 @@ const Destinantion = () => {
   )
 }
 
-export default Destinantion
+export default Destination
