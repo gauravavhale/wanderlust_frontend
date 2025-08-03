@@ -14,7 +14,7 @@ const Packages = () => {
 
   return (
     <div className='min-h-[100vh] w-full'>
-        <div className='flex flex-col items-center my-10'>
+        <div className='flex flex-col items-center my-2'>
 
             <div className="m-4 flex flex-col md:flex-row md:flex-wrap justify-center gap-3 md:gap-5 md:w-[80vw]">
 
@@ -41,24 +41,7 @@ const Packages = () => {
                 }
 
             </div>
-
-            {/* <div>
-                <div className='flex flex-col md:flex-row md:w-[60vw] my-10 items-center '>
-                    <div className='w-[80vw] md:w-1/2'>
-                        <div className='bg-[#EDEDED] p-8 text-[#181E4B] flex flex-col rounded-md'>
-                            <p className='text-2xl font-bold text-center'>Plan Your Trip</p>
-                            <p className='text-center'>Tell us your dream destination, travel dates, and preferences we’ll create a personalized itinerary just for you. Whether it’s a romantic getaway, a family vacation, or an adventurous journey, we’ll make it unforgettable.</p>
-                            <input placeholder='Search Tour' type='text' className='w-full outline-none my-4 bg-white  p-3 '></input>
-                            <input placeholder='Where To ?' type='text' className='w-full outline-none my-4 bg-white  p-3 '></input>
-                            <input placeholder='Date' type='text' className='w-full outline-none my-4 bg-white  p-3 '></input>
-                        </div>
-                    </div>
-                    <div className='w-full md:w-1/2 mt-4 md:mt-0'>
-                        <Image src={'/assets/273 1.png'} alt='Image' width={100} height={100} className='object-cover w-[300px] md:w-[400px]'/>
-                    </div>
-                </div>
-            </div> */}
-
+            
         </div>
     </div>
   )

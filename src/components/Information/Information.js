@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Information = ({ packageInfo }) => {
   return (
-    <div className="flex flex-col items-center">
-     <div className="w-[90vw] md:w-[60vw] my-10 p-2">
+    <div className="flex flex-col items-center my-5 p-2">
+     <div className="w-[90vw] md:w-[60vw] ">
       <div>
         <div className="flex flex-row items-center mb-2">
           <h1 className="text-2xl font-bold text-[#181E4B]">{packageInfo.location}</h1>
