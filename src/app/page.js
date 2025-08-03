@@ -25,7 +25,14 @@ const Home = () => {
     <div className='h-full w-full mb-[50px] '>
 
           <div className='w-full h-[90vh] relative'>
-            <Image src={'/assets/landing_image1.png'} alt='landing' fill className='object-cover' />
+
+              <div className="md:hidden">
+                <Image src={'/assets/eifeltower.jpg'} alt='landing' fill className='object-cover' />
+              </div>
+              <div className="hidden md:block">
+                <Image src={'/assets/landing_image1.png'} alt='landing' fill className='object-cover' />
+              </div>
+            
           
               <div className='absolute inset-0 flex flex-col justify-center items-center text-center'>
                 <h2 className=' text-white text-2xl md:text:4xl lg:text-5xl font-bold font-serif drop-shadow-lg'>

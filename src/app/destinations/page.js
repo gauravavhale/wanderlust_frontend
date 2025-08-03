@@ -13,7 +13,13 @@ const Destination = () => {
     <div className='h-full w-full'>
 
       <div className='w-full h-[90vh] relative'>
-        <Image src='/assets/Rectangle 19290.png' fill className='object-cover' alt='landing'/>
+        <div className="md:hidden">
+          <Image src='/assets/pisa.jpg' fill className='object-cover' alt='landing'/>
+        </div>
+        <div className="hidden md:block">
+          <Image src='/assets/Rectangle 19290.png' fill className='object-cover' alt='landing'/>
+        </div>
+        
         <div className='absolute flex justify-center items-center inset-0 '>
           <Image src='/assets/Landscapes.png' className='w-[300px] h-auto sm:w-[400px]'  height={200} width={400} alt='landing' />
         </div>
