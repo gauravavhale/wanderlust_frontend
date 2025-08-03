@@ -3,8 +3,8 @@ import { Information } from "@/components/Information/Information";
 import Packages from '@/data/packages.json'
 import TourPlan from '@/data/tourPlan.json'
 
-export default function PackageDetails({ params }) {
-const { loc } = params;
+export default async function PackageDetails({ params }) {
+const { loc } = await params;
 const Destinantion = Packages.find((pkg)=>pkg.location.toLowerCase() === loc.toLowerCase() )
 const tourData = TourPlan.find((plan)=> plan.location.toLowerCase() === loc.toLowerCase())
 
@@ -19,9 +19,8 @@ const tourData = TourPlan.find((plan)=> plan.location.toLowerCase() === loc.toLo
         </div>
       </div>
       <div>
-        {/* <Information packageInfo={Destinantion} /> */}
-        
-        
+
+        <Information packageInfo={Destinantion} />
 
       </div>
     </div>
