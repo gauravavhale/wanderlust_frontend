@@ -13,7 +13,7 @@ export const Navbar = () => {
     ]
 
   return (
-    <nav className='flex flex-row justify-around items-center py-2 px-2 shadow-md bg-white'>
+    <nav className='flex flex-row justify-around items-center py-2 px-2 shadow-md bg-white '>
       <div className='flex-shrink-0'>
         <Image src={"/images/wanderlust.png"}  height={50} width={50} alt='wanderlust'/>
       </div>
