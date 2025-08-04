@@ -1,0 +1,135 @@
+{
+  "Bali": [
+    {"src":"https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg","alt":"Uluwatu Temple at sunset"},
+    {"src":"https://images.pexels.com/photos/210179/pexels-photo-210179.jpeg","alt":"Gate of Heaven at Lempuyang Temple"},
+    {"src":"https://images.pexels.com/photos/4195320/pexels-photo-4195320.jpeg","alt":"Tegalalang rice terraces near Ubud"},
+    {"src":"https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg","alt":"Mount Batur sunrise view"},
+    {"src":"https://images.pexels.com/photos/29989222/pexels-photo-29989222.jpeg","alt":"Waterfall in lush Bali jungle"},
+    {"src":"https://images.pexels.com/photos/7723958/pexels-photo-7723958.jpeg","alt":"Macaque monkey in Bali jungle"},
+    {"src":"https://images.pexels.com/photos/7722417/pexels-photo-7722417.jpeg","alt":"Elephants in Bali wildlife sanctuary"},
+    {"src":"https://images.pexels.com/photos/208744/pexels-photo-208744.jpeg","alt":"Infinity pool overlooking ocean cliff"},
+    {"src":"https://images.pexels.com/photos/1642501/pexels-photo-1642501.jpeg","alt":"Macaques at Ubud Monkey Forest"}
+  ],
+  "Dubai": [
+  {"src":"https://images.pexels.com/photos/3787839/pexels-photo-3787839.jpeg","alt":"Burj Khalifa against blue sky"},
+  {"src":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg","alt":"Palm Jumeirah aerial coastline"},
+  {"src":"https://images.pexels.com/photos/290386/pexels-photo-290386.jpeg","alt":"Dubai Marina waterfront daytime"},
+  {"src":"https://images.pexels.com/photos/3787838/pexels-photo-3787838.jpeg","alt":"Desert safari with camels in Dubai"},
+  {"src":"https://images.pexels.com/photos/29113748/pexels-photo-29113748.jpeg","alt":"Dubai skyline illuminated at night with Burj Khalifa"},
+  {"src":"https://images.pexels.com/photos/2478248/pexels-photo-2478248.jpeg","alt":"Dubai Mall interior architecture"},
+  {"src":"https://images.pexels.com/photos/450297/pexels-photo-450297.jpeg","alt":"Traditional boats on Dubai Creek"},
+  {"src":"https://images.pexels.com/photos/3787840/pexels-photo-3787840.jpeg","alt":"Skyscrapers seen from above Dubai"},
+  {"src":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg","alt":"Palm Jumeirah coastline with Burj Al Arab hotel"},
+  {"src":"https://images.pexels.com/photos/31215772/pexels-photo-31215772.jpeg","alt":"Dubai Metro train passing with Burj Khalifa skyline"}
+]
+,
+  "Ladakh": [
+    {"src":"https://images.pexels.com/photos/1462014/pexels-photo-1462014.jpeg","alt":"Snow‑capped Ladakh mountains under blue sky"},
+    {"src":"https://images.pexels.com/photos/1632799/pexels-photo-1632799.jpeg","alt":"Buddhist monk walking outside monastery in Ladakh"},
+    {"src":"https://images.pexels.com/photos/1660993/pexels-photo-1660993.jpeg","alt":"Winding mountain road in Ladakh highlands"},
+    {"src":"https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg","alt":"Hemis Monastery traditional architecture"},
+    {"src":"https://images.pexels.com/photos/1660997/pexels-photo-1660997.jpeg","alt":"Shanti Stupa with Himalayan backdrop"},
+    {"src":"https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg","alt":"Leh Palace with mountains in the background"},
+    {"src":"https://images.pexels.com/photos/2868240/pexels-photo-2868240.jpeg","alt":"Mountain pass road in Ladakh valley"}
+  ]
+,
+  "Maldives": [
+    {"src":"https://images.pexels.com/photos/28859944/pexels-photo-28859944.jpeg","alt":"Maldives aerial island paradise"},
+    {"src":"https://images.pexels.com/photos/3601426/pexels-photo-3601426.jpeg","alt":"Turquoise lagoon Maldives"},
+    {"src":"https://images.pexels.com/photos/3601453/pexels-photo-3601453.jpeg","alt":"Overwater resort private pool"},
+    {"src":"https://images.pexels.com/photos/1450354/pexels-photo-1450354.jpeg","alt":"White sand beach Maldives"},
+    {"src":"https://images.pexels.com/photos/3601448/pexels-photo-3601448.jpeg","alt":"Wooden walkway to ocean villas"},
+    {"src":"https://images.pexels.com/photos/1450363/pexels-photo-1450363.jpeg","alt":"Sunset over Maldives lagoon"},
+    {"src":"https://images.pexels.com/photos/3601424/pexels-photo-3601424.jpeg","alt":"Luxury resort Maldives water villas"},
+    {"src":"https://images.pexels.com/photos/3601435/pexels-photo-3601435.jpeg","alt":"Island surrounded by reef Maldives"},
+    {"src":"https://images.pexels.com/photos/3601465/pexels-photo-3601465.jpeg","alt":"Hammock over sea in Maldives resort"}
+  ],
+  "Paris": [
+    {"src":"https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg","alt":"Eiffel Tower at sunset"},
+    {"src":"https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg","alt":"Louvre glass pyramid"},
+    {"src":"https://images.pexels.com/photos/269218/pexels-photo-269218.jpeg","alt":"Classic Paris street scene"},
+    {"src":"https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg","alt":"Café terrace Paris"},
+    {"src":"https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg","alt":"Sacre‑Coeur Basilica Montmartre"},
+    {"src":"https://images.pexels.com/photos/127673/pexels-photo-127673.jpeg","alt":"Arc de Triomphe lit at night"},
+    {"src":"https://images.pexels.com/photos/338516/pexels-photo-338516.jpeg","alt":"Seine river cruise boat"},
+    {"src":"https://images.pexels.com/photos/338517/pexels-photo-338517.jpeg","alt":"Champs‑Elysees avenue daytime"},
+    {"src":"https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg","alt":"Paris architecture flair street"}
+  ],
+  "SriLanka": [
+    {"src":"https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg","alt":"Sigiriya Rock Fortress"},
+    {"src":"https://images.pexels.com/photos/460775/pexels-photo-460775.jpeg","alt":"Tea plantations Nuwara Eliya"},
+    {"src":"https://images.pexels.com/photos/1456291/pexels-photo-1456291.jpeg","alt":"Nine Arches Bridge train view"},
+    {"src":"https://images.pexels.com/photos/1456294/pexels-photo-1456294.jpeg","alt":"Mirissa beach palm trees"},
+    {"src":"https://images.pexels.com/photos/1456296/pexels-photo-1456296.jpeg","alt":"Wild elephant Sri Lanka"},
+    {"src":"https://images.pexels.com/photos/1456297/pexels-photo-1456297.jpeg","alt":"Galle Fort lighthouse"},
+    {"src":"https://images.pexels.com/photos/1456298/pexels-photo-1456298.jpeg","alt":"Stilt fishermen Sri Lanka"},
+    {"src":"https://images.pexels.com/photos/1456300/pexels-photo-1456300.jpeg","alt":"Yala National Park"},
+    {"src":"https://images.pexels.com/photos/1456302/pexels-photo-1456302.jpeg","alt":"Sunset over Bentota beach"},
+    {"src":"https://images.pexels.com/photos/1456305/pexels-photo-1456305.jpeg","alt":"Ancient temple under tree canopy"}
+  ],
+  "Spain": [
+    {"src":"https://images.pexels.com/photos/167770/pexels-photo-167770.jpeg","alt":"Sagrada Familia Barcelona"},
+    {"src":"https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg","alt":"Park Güell mosaic Barcelona"},
+    {"src":"https://images.pexels.com/photos/356844/pexels-photo-356844.jpeg","alt":"Plaza de España Seville"},
+    {"src":"https://images.pexels.com/photos/236518/pexels-photo-236518.jpeg","alt":"Madrid Royal Palace view"},
+    {"src":"https://images.pexels.com/photos/460775/pexels-photo-460775.jpeg","alt":"Granada Alhambra fortress"},
+    {"src":"https://images.pexels.com/photos/460774/pexels-photo-460774.jpeg","alt":"Costa Brava beach coastline"},
+    {"src":"https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg","alt":"Madrid street café vibe"},
+    {"src":"https://images.pexels.com/photos/356839/pexels-photo-356839.jpeg","alt":"Spanish flamenco dancer"},
+    {"src":"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg","alt":"Ibiza beach view"},
+    {"src":"https://images.pexels.com/photos/460776/pexels-photo-460776.jpeg","alt":"Colorful Spanish facades"}
+  ],
+  "Brazil": [
+    {"src":"https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg","alt":"Christ the Redeemer Rio"},
+    {"src":"https://images.pexels.com/photos/1796724/pexels-photo-1796724.jpeg","alt":"Sugarloaf Mountain Guanabara Bay"},
+    {"src":"https://images.pexels.com/photos/3408743/pexels-photo-3408743.jpeg","alt":"Iguazu Falls panorama"},
+    {"src":"https://images.pexels.com/photos/1796721/pexels-photo-1796721.jpeg","alt":"Copacabana Beach Rio"},
+    {"src":"https://images.pexels.com/photos/5313210/pexels-photo-5313210.jpeg","alt":"Amazon rainforest canopy"},
+    {"src":"https://images.pexels.com/photos/259447/pexels-photo-259447.jpeg","alt":"Colorful colonial Salvador Brazil"},
+    {"src":"https://images.pexels.com/photos/1796720/pexels-photo-1796720.jpeg","alt":"Samba dancers Rio carnival"},
+    {"src":"https://images.pexels.com/photos/3408741/pexels-photo-3408741.jpeg","alt":"Chapada Diamantina Park Brazil"},
+    {"src":"https://images.pexels.com/photos/2570139/pexels-photo-2570139.jpeg","alt":"Football stadium Brazil"}
+  ],
+  "Giza": [
+    {"src":"https://images.pexels.com/photos/71241/pexels-photo-71241.jpeg","alt":"Great Pyramid of Giza"},
+    {"src":"https://images.pexels.com/photos/235648/pexels-photo-235648.jpeg","alt":"Giza pyramids panorama"},
+    {"src":"https://images.pexels.com/photos/235619/pexels-photo-235619.jpeg","alt":"Pyramid stone detail close‑up"},
+    {"src":"https://images.pexels.com/photos/235642/pexels-photo-235642.jpeg","alt":"Camel silhouette before pyramids"},
+    {"src":"https://images.pexels.com/photos/235643/pexels-photo-235643.jpeg","alt":"Sunset behind Great Pyramid"},
+    {"src":"https://images.pexels.com/photos/235640/pexels-photo-235640.jpeg","alt":"Tourists walking Giza plateau"},
+    {"src":"https://images.pexels.com/photos/235645/pexels-photo-235645.jpeg","alt":"Aerial desert view Giza pyramids"},
+    {"src":"https://images.pexels.com/photos/235650/pexels-photo-235650.jpeg","alt":"Ancient ruins near pyramids"},
+    {"src":"https://images.pexels.com/photos/235647/pexels-photo-235647.jpeg","alt":"Wide desert landscape pyramids"}
+  ],
+  "Switzerland": [
+    {"src":"https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg","alt":"Lake Geneva with Alps backdrop"},
+    {"src":"https://images.pexels.com/photos/358482/pexels-photo-358482.jpeg","alt":"Swiss Alpine village"},
+    {"src":"https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg","alt":"Train through snowy Alps"},
+    {"src":"https://images.pexels.com/photos/910411/pexels-photo-910411.jpeg","alt":"Interlaken town in mountains"},
+    {"src":"https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg","alt":"Zurich city by lake"},
+    {"src":"https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg","alt":"Chapel Bridge Lucerne"},
+    {"src":"https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg","alt":"Hiking trail in Swiss Alps"}
+  ],
+  "Sweden": [
+    {"src":"https://images.pexels.com/photos/1329510/pexels-photo-1329510.jpeg","alt":"Stockholm Gamla Stan old town"},
+    {"src":"https://images.pexels.com/photos/804954/pexels-photo-804954.jpeg","alt":"Northern lights Swedish Lapland"},
+    {"src":"https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg","alt":"Swedish archipelago landscape"},
+    {"src":"https://images.pexels.com/photos/804953/pexels-photo-804953.jpeg","alt":"Ice hotel Jukkasjärvi, Sweden"},
+    {"src":"https://images.pexels.com/photos/221455/pexels-photo-221455.jpeg","alt":"Vasa Museum Stockholm facade"},
+    {"src":"https://images.pexels.com/photos/804956/pexels-photo-804956.jpeg","alt":"Winter forest in northern Sweden"},
+    {"src":"https://images.pexels.com/photos/804957/pexels-photo-804957.jpeg","alt":"Stockholm City Hall by water"},
+    {"src":"https://images.pexels.com/photos/804958/pexels-photo-804958.jpeg","alt":"Old coastal fishing village Sweden"}
+  ],
+  "Italy": [
+  {"src":"https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg","alt":"Colosseum in Rome"},
+  {"src":"https://images.pexels.com/photos/167964/pexels-photo-167964.jpeg","alt":"Venice canals with gondolas"},
+  {"src":"https://images.pexels.com/photos/3408741/pexels-photo-3408741.jpeg","alt":"Florence Duomo skyline"},
+  {"src":"https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg","alt":"Leaning Tower of Pisa"},
+  {"src":"https://images.pexels.com/photos/3700514/pexels-photo-3700514.jpeg","alt":"Colorful Amalfi Coast villages by the sea"},
+  {"src":"https://images.pexels.com/photos/259447/pexels-photo-259447.jpeg","alt":"Vatican City St. Peter's Basilica"},
+  {"src":"https://images.pexels.com/photos/1643572/pexels-photo-1643572.jpeg","alt":"Tuscan countryside vineyards"},
+  {"src":"https://images.pexels.com/photos/1618501/pexels-photo-1618501.jpeg","alt":"Cinque Terre cliffside village"},
+  {"src":"https://images.pexels.com/photos/1618502/pexels-photo-1618502.jpeg","alt":"Trevi Fountain Rome evening"},
+  {"src":"https://images.pexels.com/photos/4084908/pexels-photo-4084908.jpeg","alt":"Milan Cathedral illuminated at sunset"}
+]
+}

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -5,8 +6,15 @@ import { CiCalendar } from "react-icons/ci";
 import { MdPersonOutline } from "react-icons/md";
 import { IoMdStar } from "react-icons/io";
 import { SlLocationPin } from "react-icons/sl";
+import { useRef } from 'react';
 
 const Home = () => {
+
+  const iconsSectionRef = useRef(null)
+
+  const scrollToIcons = () => {
+    iconsSectionRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   const Categoryies = [
     { src: '/assets/001-tour-guide.png', title:'Guided Tour', para:'From iconic landmarks to hidden gems, our guided tours give you the perfect travel experience.' },
@@ -22,7 +30,7 @@ const Home = () => {
   ]
 
   return (
-    <div className='h-full w-full mb-[50px] '>
+    <div className='h-full w-full mb-[50px] mt-17'>
 
           <div className='w-full h-[90vh] relative'>
 
@@ -40,13 +48,13 @@ const Home = () => {
                 </h2>
                 <p className=' text-white text-lg md:text-2xl mt-2 font-serif drop-shadow-md'>No matter where <br/>you&apos;re going to, we&apos;ll<br/> take you there</p>
                 <div className='flex flex-wrap justify-center gap-6 mt-6'>
-                  <Link href={'/packages'} className='p-2 px-3 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Plan Your Trip</Link>
+                  <button onClick={scrollToIcons} className='p-2 px-3 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>About Us</button>
                   <Link href={'/destinations'} className='p-2 px-3 bg-[#DF6951] rounded-md text-white text-sm shadow-md hover:shadow-lg hover:bg-[#c85a44] transition-all duration-300'>Explore Destinations</Link>
                 </div>
               </div>
           </div>
 
-          <div className='flex justify-around p-4 bg-[#dcd9d9] gap-4'>
+          <div  ref={iconsSectionRef} className='flex justify-around p-4 bg-[#dcd9d9] gap-4'>
             <Image src={"/assets/image 909.png"}  alt='Plane' className='w-16 h-8 sm:w-24 sm:h-12 md:w-32 md:h-16' height={75} width={171}></Image>
             <Image src={"/assets/Mask group-1.png"} alt='Luggage' className='w-16 h-8 sm:w-24 sm:h-12 md:w-32 md:h-16' height={75} width={171}></Image>
             <Image src={"/assets/Mask group.png"} alt='hotel' className='w-16 h-8 sm:w-24 sm:h-12 md:w-32 md:h-16' height={75} width={171}></Image>
@@ -142,8 +150,6 @@ const Home = () => {
 
                 ))
               }
-              
-
               </div>
 
             </div>

@@ -2,32 +2,29 @@
 import React, { use, useState } from "react";
 import { Information } from "@/components/Information/Information";
 import { Tourplan } from "@/components/Tourplan/Tourplan";
-import Packages from '@/data/packages.json'
-import TourPlan from '@/data/tourPlan.json'
+import { Gallery } from "@/components/Gallery/Gallery";
 
 export default function PackageDetails({ params }) {
 
-  const [activateTab, setActivateTab] = useState('Information')
-
+const [activateTab, setActivateTab] = useState('Information')
 const { loc } =  use(params);
-const Destinantion = Packages.find((pkg)=>pkg.location.toLowerCase() === loc.toLowerCase() )
-const tourData = TourPlan.find((plan)=> plan.location.toLowerCase() === loc.toLowerCase())
-
 
   return (
-    <div>
+    <div className="my-19">
       <div className="flex justify-center my-5">
         <div className='flex flex-row justify-around p-4 bg-[#ff17007a] w-full md:w-[70vw] text-md'>
                 <button onClick={()=>setActivateTab('Information')} className={`${activateTab === 'Information' ? "font-bold underline" : "" }`}>Information</button>
                 <button onClick={()=>setActivateTab('TourPlan')} className={`${activateTab === 'TourPlan' ? "font-bold underline" : ""}`}>Tour Plan</button>
-                {/* <button >Gallery</button> */}
+                <button onClick={()=>setActivateTab('Gallery')} className={`${activateTab === 'Gallery' ? "font-bold underline" : ""}`}>Gallery</button>
         </div>
       </div>
       <div>
 
-        { activateTab === 'Information' && <Information packageInfo={Destinantion} />}
+        { activateTab === 'Information' && <Information loc={loc} />}
 
-        { activateTab === 'TourPlan' && <Tourplan data={tourData} />}
+        { activateTab === 'TourPlan' && <Tourplan loc={loc} />}
+
+        { activateTab === 'Gallery' && <Gallery loc={loc} />}
 
       </div>
     </div>

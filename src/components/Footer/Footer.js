@@ -10,7 +10,7 @@ import Link from 'next/link';
 export const Footer = () => {
     return (
         <footer>
-            <div className='flex flex-col md:flex-row py-10 p-4 justify-around bg-[#181E4B]'>
+            <div className='flex flex-col md:flex-row py-10 p-4 justify-around bg-[#181E4B] mt-5'>
 
                 <div className='mb-5 md:mb-0'>
                     <h5 className='text-white text-2xl font-bold font-serif'>Wonderlust Travel<br/>Hub</h5>
