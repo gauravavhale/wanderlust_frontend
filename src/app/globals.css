@@ -2,3 +2,8 @@
 html,body{
     background: white;
 }
+
+/* Disable text selection */
+* {
+  user-select: none;
+}

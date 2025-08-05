@@ -1,10 +1,6 @@
 import React from 'react'
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
-import { IoLocation } from "react-icons/io5";
-import { FaPhoneAlt } from "react-icons/fa";
-import { IoMail } from "react-icons/io5";
+import { FaLinkedin, FaInstagramSquare, FaTwitterSquare, FaPhoneAlt } from "react-icons/fa";
+import { IoLocation, IoMail } from "react-icons/io5";
 import Link from 'next/link';
 
 export const Footer = () => {
@@ -13,9 +9,17 @@ export const Footer = () => {
             <div className='flex flex-col md:flex-row py-10 p-4 justify-around bg-[#181E4B] mt-5'>
 
                 <div className='mb-5 md:mb-0'>
-                    <h5 className='text-white text-2xl font-bold font-serif'>Wonderlust Travel<br/>Hub</h5>
-                    <p className='text-sm text-[#757095]'>Your journey begins here,<br/> your memories last forever.</p>
-                    <span className='flex flex-row mt-2 gap-3'><FaLinkedin className='text-white text-xl'/><FaInstagramSquare className='text-white text-xl'/><FaTwitterSquare className='text-white text-xl'/></span>
+                    <h5 className='text-white text-2xl font-bold font-serif'>
+                        Wanderlust Travel<br />Hub
+                    </h5>
+                    <p className='text-sm text-[#757095]'>
+                        Your journey begins here,<br /> your memories last forever.
+                    </p>
+                    <span className='flex flex-row mt-2 gap-3'>
+                        <FaLinkedin className='text-white text-xl' />
+                        <FaInstagramSquare className='text-white text-xl' />
+                        <FaTwitterSquare className='text-white text-xl' />
+                    </span>
                 </div>
 
                 <div className='flex flex-col mb-5 md:mb-0'>
@@ -25,7 +29,7 @@ export const Footer = () => {
                     <Link href={''} className='text-white'>Blog</Link>
                     <Link href={''} className='text-white'>Pricing</Link>
                 </div>
-                
+
                 <div className='flex flex-col mb-5 md:mb-0'>
                     <h5 className='text-white text-xl font-bold'>Destination</h5>
                     <Link href={''} className='text-white'>Maldives</Link>
@@ -36,12 +40,30 @@ export const Footer = () => {
 
                 <div className='flex flex-col'>
                     <h5 className='text-white text-xl font-bold'>Contact Us</h5>
-                    <div className='text-white flex flex-row items-center'><IoLocation className='text-lg mr-2'/><span>Chhatrapati Sambhajinagar.</span></div>
-                    <div className='text-white flex flex-row items-center'><FaPhoneAlt className='text-lg mr-2'/><span>+91-XXXXXXXXXX</span></div>
-                    <div className='text-white flex flex-row items-center'><IoMail className='text-lg mr-2'/><span>support@wanderlust.com</span></div>
+                    <div className='text-white flex flex-row items-center'>
+                        <IoLocation className='text-lg mr-2' />
+                        <span>Chhatrapati Sambhajinagar.</span>
+                    </div>
+                    <div className='text-white flex flex-row items-center'>
+                        <FaPhoneAlt className='text-lg mr-2' />
+                        <span>+91-XXXXXXXXXX</span>
+                    </div>
+                    <div className='text-white flex flex-row items-center'>
+                        <IoMail className='text-lg mr-2' />
+                        <span>support@wanderlust.com</span>
+                    </div>
                 </div>
-                
 
+            </div>
+
+            {/* Copyright & Credit Section */}
+            <div className="bg-[#101538] text-white text-center py-3 text-sm border-t border-gray-700">
+                <p>
+                    &copy; {new Date().getFullYear()} Wanderlust Travel Hub. All Rights Reserved.
+                </p>
+                <p className="mt-1">
+                    Designed & Developed by <span className="text-[#DF6951] font-semibold">Gaurav Avhale</span>
+                </p>
             </div>
         </footer>
     )
