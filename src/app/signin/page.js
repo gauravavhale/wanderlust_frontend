@@ -1,16 +1,36 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
 export default function SignupPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter();
 
-  const handleSignup = (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
-    console.log("Signup attempt:", { name, email, password });
-    // Add signup logic here
+    try{
+      const response = await axios.post(
+      "http://localhost:4040/auth/signin",
+      {name,email,password},
+      )
+       console.log("Signup Response:", response.data);
+       if(response.data.success){
+        alert(response.data.message || " Registered Successfully")
+        router.push('/')
+       } else {
+        alert(error.data.message || 'Signup failed');
+       }
+    } catch (error) {
+        if (error.response) {
+          alert(error.response.data.message); // e.g. "User already exists. Please log in instead."
+        } else {
+          alert("Something went wrong");
+        }
+      }
   };
 
   return (

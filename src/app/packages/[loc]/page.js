@@ -3,6 +3,7 @@ import React, { use, useState } from "react";
 import { Information } from "@/components/Information/Information";
 import { Tourplan } from "@/components/Tourplan/Tourplan";
 import { Gallery } from "@/components/Gallery/Gallery";
+import { BookNow } from "@/components/BookNow/BookNow";
 
 export default function PackageDetails({ params }) {
 
@@ -16,6 +17,7 @@ const { loc } =  use(params);
                 <button onClick={()=>setActivateTab('Information')} className={`${activateTab === 'Information' ? "font-bold underline" : "" }`}>Information</button>
                 <button onClick={()=>setActivateTab('TourPlan')} className={`${activateTab === 'TourPlan' ? "font-bold underline" : ""}`}>Tour Plan</button>
                 <button onClick={()=>setActivateTab('Gallery')} className={`${activateTab === 'Gallery' ? "font-bold underline" : ""}`}>Gallery</button>
+                <button onClick={()=>setActivateTab('BookNow')} className={`${activateTab === 'BookNow' ? "font-bold underline" : ""}`}>Book Now</button>
         </div>
       </div>
       <div>
@@ -25,6 +27,8 @@ const { loc } =  use(params);
         { activateTab === 'TourPlan' && <Tourplan loc={loc} />}
 
         { activateTab === 'Gallery' && <Gallery loc={loc} />}
+
+        { activateTab === 'BookNow' && <BookNow /> }
 
       </div>
     </div>

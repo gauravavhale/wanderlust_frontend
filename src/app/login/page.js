@@ -1,16 +1,30 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Login attempt:", { email, password });
-    // Add login logic here
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+  const response = await axios.post("http://localhost:4040/auth/login", { email, password });
+  alert(response.data.message);
+  router.push('/')
+
+  } catch (error) {
+  if (error.response) {
+    alert(error.response.data.message); // Shows "User Not Registered" or "Wrong Password"
+  } else {
+    alert("Something went wrong. Please try again later.");
+  }
+}
+};
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#F8FAFC] px-4">
