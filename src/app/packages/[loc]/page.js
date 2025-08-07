@@ -14,10 +14,10 @@ const { loc } =  use(params);
     <div className="my-19">
       <div className="flex justify-center my-5">
         <div className='flex flex-row justify-around p-4 bg-[#ff17007a] w-full md:w-[70vw] text-md'>
-                <button onClick={()=>setActivateTab('Information')} className={`${activateTab === 'Information' ? "font-bold underline" : "" }`}>Information</button>
+                <button onClick={()=>setActivateTab('Information')} className={`${activateTab === 'Information' ? "font-bold underline" : "" }`}>Info</button>
                 <button onClick={()=>setActivateTab('TourPlan')} className={`${activateTab === 'TourPlan' ? "font-bold underline" : ""}`}>Tour Plan</button>
                 <button onClick={()=>setActivateTab('Gallery')} className={`${activateTab === 'Gallery' ? "font-bold underline" : ""}`}>Gallery</button>
-                <button onClick={()=>setActivateTab('BookNow')} className={`${activateTab === 'BookNow' ? "font-bold underline" : ""}`}>Book Now</button>
+                <button onClick={()=>setActivateTab('BookNow')} className={`${activateTab === 'BookNow' ? "font-bold underline" : ""}`}>Book</button>
         </div>
       </div>
       <div>
