@@ -80,7 +80,7 @@ export const BookNow=()=>{
     <section className="w-full max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-2xl mt-8">
       <h2 className="text-2xl font-bold text-center mb-6">Book Your Destination</h2>
 
-      <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 m-2">
         
         {/* Name */}
         <div className="flex flex-col">
