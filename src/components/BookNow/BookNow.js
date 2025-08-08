@@ -44,8 +44,9 @@ export const BookNow=()=>{
 
   const token = localStorage.getItem('token');
   if (!token) {
-    toast.error("Login to Book");
-    return router.push('/login');
+    toast.error("Please login to book");
+    router.push('/login');
+    return;
   }
 
   try {
@@ -55,7 +56,7 @@ export const BookNow=()=>{
       console.log(booking);
       toast.success("Booking Successful");
       localStorage.setItem('Booking', JSON.stringify(booking));
-      router.push('/login');
+      router.push('/login'); // You may want to change to /bookings or /success
     } else {
       toast.error(response.data.message || "Failed to Book");
     }
@@ -64,6 +65,7 @@ export const BookNow=()=>{
     toast.error("Failed to submit booking");
   }
 };
+
 
   const fnLoginCheck=()=>{
     const token = localStorage.getItem('token')
