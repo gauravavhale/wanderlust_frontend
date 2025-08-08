@@ -14,7 +14,7 @@ export default function SignupPage() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try{
-      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/signin`,{name,email,password},)
+      const response = await axios.post(`${apiUrl}/auth/signin`,{name,email,password},)
       console.log(response)
       const {user, message, success, token} = response.data
       if ( user && message && success && token){

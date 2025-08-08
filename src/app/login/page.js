@@ -14,7 +14,7 @@ export default function LoginPage() {
   e.preventDefault();
 
   try {
-  const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/login`, { email, password });
+  const response = await axios.post(`${apiUrl}/auth/login`, { email, password });
   console.log(response)
   const {user, message, success, token} = response.data
   if ( user && message && success && token){
