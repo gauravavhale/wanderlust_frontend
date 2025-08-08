@@ -13,17 +13,15 @@ export default function SignupPage() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try{
-      const response = await axios.post(
-      "http://localhost:4040/auth/signin",
-      {name,email,password},
-      )
-       console.log("Signup Response:", response.data);
-       if(response.data.success){
-        alert(response.data.message || " Registered Successfully")
+      const response = await axios.post("http://localhost:4040/auth/signin",{name,email,password},)
+      console.log(response)
+      const {user, message, success, token} = response.data
+      if ( user && message && success && token){
+        localStorage.setItem("user", JSON.stringify(user));
+        localStorage.setItem("token", token);
+        alert(message);
         router.push('/')
-       } else {
-        alert(error.data.message || 'Signup failed');
-       }
+      }
     } catch (error) {
         if (error.response) {
           alert(error.response.data.message); // e.g. "User already exists. Please log in instead."

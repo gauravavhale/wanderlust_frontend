@@ -1,6 +1,7 @@
 "use client";
 import axios from "axios";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export const BookNow=()=>{
   const [formData, setFormData] = useState({
@@ -28,6 +29,8 @@ export const BookNow=()=>{
     "Sweden",
   ];
 
+  const router = useRouter()
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -49,6 +52,15 @@ export const BookNow=()=>{
       alert("Failed to submit booking");
     }
   };
+
+  const fnLoginCheck=()=>{
+    const token = localStorage.getItem('token')
+    if(!token){
+      Bookingbtn.disabled= true
+      alert("Login to Book")
+      router.push('/login')
+    }
+  }
 
   return (
     <section className="w-full max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-2xl mt-8">
@@ -158,12 +170,15 @@ export const BookNow=()=>{
         {/* Submit Button */}
         <div className="md:col-span-2">
           <button
-            type="submit"
-            className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-200"
+          id="Bookingbtn"
+          onClick={fnLoginCheck}
+          type="submit"
+            className={` w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed`}
           >
             Book Now
           </button>
         </div>
+        
       </form>
     </section>
   );

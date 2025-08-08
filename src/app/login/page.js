@@ -14,9 +14,14 @@ export default function LoginPage() {
 
   try {
   const response = await axios.post("http://localhost:4040/auth/login", { email, password });
-  alert(response.data.message);
-  router.push('/')
-
+  console.log(response)
+  const {user, message, success, token} = response.data
+  if ( user && message && success && token){
+    localStorage.setItem("user", JSON.stringify(user));
+    localStorage.setItem("token", token);
+    alert(message);
+    router.push('/')
+  }
   } catch (error) {
   if (error.response) {
     alert(error.response.data.message); // Shows "User Not Registered" or "Wrong Password"
