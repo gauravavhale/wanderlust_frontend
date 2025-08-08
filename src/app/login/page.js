@@ -1,37 +1,111 @@
 "use client";
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
+
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loggedInUser, setLoggedInUser] = useState(null);
+  const [bookingData, setBookingData] = useState(null);
   const router = useRouter();
 
+  // Load user from localStorage on first render
+  useEffect(() => {
+  const storedUser = localStorage.getItem("user");
+  if (storedUser) {
+    try {
+      setLoggedInUser(JSON.parse(storedUser));
+    } catch (err) {
+      console.error("Failed to parse user from localStorage");
+    }
+  }
+
+  // 👇 Fetch Booking from localStorage
+  const storedBooking = localStorage.getItem("Booking");
+  if (storedBooking) {
+    try {
+      setBookingData(JSON.parse(storedBooking));
+    } catch (err) {
+      console.error("Failed to parse booking from localStorage");
+    }
+  }
+}, []);
+
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  try {
-  const response = await axios.post(`${apiUrl}/auth/login`, { email, password });
-  console.log(response)
-  const {user, message, success, token} = response.data
-  if ( user && message && success && token){
-    localStorage.setItem("user", JSON.stringify(user));
-    localStorage.setItem("token", token);
-    alert(message);
-    router.push('/')
-  }
-  } catch (error) {
-  if (error.response) {
-    alert(error.response.data.message); // Shows "User Not Registered" or "Wrong Password"
-  } else {
-    alert("Something went wrong. Please try again later.");
-  }
-}
-};
+    try {
+      const response = await axios.post(`${apiUrl}/auth/login`, {
+        email,
+        password,
+      });
 
+      const { user, message, success, token } = response.data;
+
+      if (user && message && success && token) {
+        localStorage.setItem("user", JSON.stringify(user));
+        localStorage.setItem("token", token);
+        setLoggedInUser(user); // ✅ Update state
+        toast.success(message);
+      }
+    } catch (error) {
+      if (error.response) {
+        toast.error(error.response.data.message);
+      } else {
+        toast.error("Something went wrong. Please try again later.");
+      }
+    }
+  };
+
+  // If user is logged in, show their dashboard
+  if (loggedInUser) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-[#F8FAFC] text-center px-4">
+        <div className="bg-white shadow-lg rounded-2xl p-6 md:p-8 w-full max-w-md">
+          <h2 className="text-2xl font-bold text-[#181E4B] mb-4">
+            Hi, {loggedInUser.name}
+          </h2>
+          <p className="text-gray-600 mb-4">You are already logged in.</p>
+
+          {/* 👇 Replace this with real booking data */}
+          <div className="bg-[#F3F4F6] rounded-lg p-4 text-left text-sm">
+            <h3 className="text-lg font-semibold mb-2">Your Booking:</h3>
+            {bookingData ? (
+              <ul className="list-disc list-inside space-y-1">
+                <li><strong>Destination:</strong> {bookingData.destination}</li>
+                <li><strong>Date:</strong> {bookingData.travelDate}</li>
+                <li><strong>Guests:</strong> {bookingData.guests}</li>
+                {/* Add more fields if needed */}
+              </ul>
+            ) : (
+              <p className="text-gray-500">No booking found.</p>
+            )}
+          </div>          
+
+          {/* Logout button */}
+          <button
+            onClick={() => {
+              localStorage.removeItem("user");
+              localStorage.removeItem("token");
+              setLoggedInUser(null);
+              toast.success("Logged out successfully");
+            }}
+            className="mt-6 w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition duration-300"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // If not logged in, show login form
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#F8FAFC] px-4">
       <div className="w-full max-w-md bg-white shadow-lg rounded-2xl p-6 md:p-8">

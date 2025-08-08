@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 export default function SignupPage() {
@@ -20,14 +21,14 @@ export default function SignupPage() {
       if ( user && message && success && token){
         localStorage.setItem("user", JSON.stringify(user));
         localStorage.setItem("token", token);
-        alert(message);
+        toast.success(message);
         router.push('/')
       }
     } catch (error) {
         if (error.response) {
-          alert(error.response.data.message); // e.g. "User already exists. Please log in instead."
+          toast.error(error.response.data.message); // e.g. "User already exists. Please log in instead."
         } else {
-          alert("Something went wrong");
+          toast.error("Something went wrong");
         }
       }
   };

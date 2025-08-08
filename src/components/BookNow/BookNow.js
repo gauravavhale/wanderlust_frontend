@@ -2,6 +2,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 export const BookNow=()=>{
   const [formData, setFormData] = useState({
@@ -43,21 +44,25 @@ export const BookNow=()=>{
     try{
       const response = await axios.post('http://localhost:4040/destinationBook/bookings',formData)
       if(response.data.success){
-        alert("Booking Successfull")
+        const booking = response.data.booking;
+        console.log(booking)
+        toast.success("Booking Successfull")
+        localStorage.setItem('Booking', JSON.stringify(booking))
+        router.push('/login')
       } else{
-        alert(response.data.message || "Failed to Book")
+        toast.error(response.data.message || "Failed to Book")
       }
     } catch(error){
       console.error("Booking Error:", err.response?.data || err.message);
-      alert("Failed to submit booking");
+      toast.error("Failed to submit booking");
     }
   };
 
   const fnLoginCheck=()=>{
     const token = localStorage.getItem('token')
     if(!token){
-      Bookingbtn.disabled= true
-      alert("Login to Book")
+      Bookingbtn.disabled = true
+      toast.error("Login to Book")
       router.push('/login')
     }
   }
