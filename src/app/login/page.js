@@ -1,4 +1,5 @@
 "use client";
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 import { useState } from "react";
 import Link from "next/link";
 import axios from "axios";
@@ -13,7 +14,7 @@ export default function LoginPage() {
   e.preventDefault();
 
   try {
-  const response = await axios.post("http://localhost:4040/auth/login", { email, password });
+  const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/login`, { email, password });
   console.log(response)
   const {user, message, success, token} = response.data
   if ( user && message && success && token){

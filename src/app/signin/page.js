@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 export default function SignupPage() {
   const [name, setName] = useState("");
@@ -13,7 +14,7 @@ export default function SignupPage() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try{
-      const response = await axios.post("http://localhost:4040/auth/signin",{name,email,password},)
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/signin`,{name,email,password},)
       console.log(response)
       const {user, message, success, token} = response.data
       if ( user && message && success && token){
