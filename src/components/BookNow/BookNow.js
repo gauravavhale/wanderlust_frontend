@@ -39,24 +39,31 @@ export const BookNow=()=>{
     });
   };
 
-  const handleSubmit = async(e) => {
-    e.preventDefault();
-    try{
-      const response = await axios.post('http://localhost:4040/destinationBook/bookings',formData)
-      if(response.data.success){
-        const booking = response.data.booking;
-        console.log(booking)
-        toast.success("Booking Successfull")
-        localStorage.setItem('Booking', JSON.stringify(booking))
-        router.push('/login')
-      } else{
-        toast.error(response.data.message || "Failed to Book")
-      }
-    } catch(error){
-      console.error("Booking Error:", err.response?.data || err.message);
-      toast.error("Failed to submit booking");
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const token = localStorage.getItem('token');
+  if (!token) {
+    toast.error("Login to Book");
+    return router.push('/login');
+  }
+
+  try {
+    const response = await axios.post('http://localhost:4040/destinationBook/bookings', formData);
+    if (response.data.success) {
+      const booking = response.data.booking;
+      console.log(booking);
+      toast.success("Booking Successful");
+      localStorage.setItem('Booking', JSON.stringify(booking));
+      router.push('/login');
+    } else {
+      toast.error(response.data.message || "Failed to Book");
     }
-  };
+  } catch (error) {
+    console.error("Booking Error:", error.response?.data || error.message);
+    toast.error("Failed to submit booking");
+  }
+};
 
   const fnLoginCheck=()=>{
     const token = localStorage.getItem('token')
@@ -175,10 +182,8 @@ export const BookNow=()=>{
         {/* Submit Button */}
         <div className="md:col-span-2">
           <button
-          id="Bookingbtn"
-          onClick={fnLoginCheck}
-          type="submit"
-            className={` w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed`}
+            type="submit"
+            className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed"
           >
             Book Now
           </button>
