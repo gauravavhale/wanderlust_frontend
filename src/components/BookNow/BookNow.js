@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 export const BookNow = () => {
   const [formData, setFormData] = useState({
@@ -62,7 +63,7 @@ export const BookNow = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4040/destinationBook/bookings",
+        `${apiUrl}/destinationBook/bookings`,
         formData
       );
       if (response.data.success) {
