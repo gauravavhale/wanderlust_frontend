@@ -67,7 +67,7 @@ export default function LoginPage() {
   // If user is logged in, show their dashboard
   if (loggedInUser) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-[#F8FAFC] text-center px-4">
+      <d iv className="flex flex-col items-center justify-center min-h-screen bg-[#F8FAFC] text-center px-4">
         <div className="bg-white shadow-lg rounded-2xl p-6 md:p-8 w-full max-w-md">
           <h2 className="text-2xl font-bold text-[#181E4B] mb-4">
             Hi, {loggedInUser.name}
@@ -75,17 +75,24 @@ export default function LoginPage() {
           <p className="text-gray-600 mb-4">You are already logged in.</p>
 
           {/* 👇 Replace this with real booking data */}
-          <div className="bg-[#F3F4F6] rounded-lg p-4 text-left text-sm">
+          <div className="bg-[#F3F4F6] rounded-lg p-4 text-left text-sm overflow-x-hidden">
             <h3 className="text-lg font-semibold mb-2">Your Booking:</h3>
             {bookingData ? (
-              <ul className="list-disc list-inside space-y-1">
-                <li><strong>Destination:</strong> {bookingData.destination}</li>
-                <li><strong>Date:</strong> {bookingData.travelDate}</li>
-                <li><strong>Guests:</strong> {bookingData.guests}</li>
-                {/* Add more fields if needed */}
+              <ul className="list-disc list-inside space-y-1 break-words">
+                <li>
+                  <strong>Destination:</strong>{" "}
+                  <span className="break-words">{bookingData.destination}</span>
+                </li>
+                <li>
+                  <strong>Date:</strong>{" "}
+                  <span className="break-words">{bookingData.travelDate}</span>
+                </li>
+                <li>
+                  <strong>Guests:</strong> {bookingData.guests}
+                </li>
               </ul>
             ) : (
-              <p className="text-gray-500">No booking found.</p>
+              <p className="text-gray-500 break-words">No booking found.</p>
             )}
           </div>          
 
@@ -102,7 +109,7 @@ export default function LoginPage() {
             Logout
           </button>
         </div>
-      </div>
+      </d>
     );
   }
 
