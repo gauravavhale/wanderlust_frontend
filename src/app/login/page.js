@@ -57,6 +57,7 @@ export default function LoginPage() {
     } catch (error) {
       if (error.response) {
         toast.error(error.response.data.message);
+        router.push('/signin'); // Redirect to Sign Up page on error
       } else {
         toast.error("Something went wrong. Please try again later.");
       }
