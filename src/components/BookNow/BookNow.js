@@ -15,7 +15,7 @@ export const BookNow = () => {
     message: "",
   });
 
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(null);
   const router = useRouter();
 
   const destinations = [
@@ -204,7 +204,7 @@ export const BookNow = () => {
         </div>
 
         {/* Submit Button */}
-        <div className="md:col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <button
             type="submit"
             disabled={!isLoggedIn}
