@@ -69,9 +69,9 @@ export default function LoginPage() {
     return (
       <d iv className="flex flex-col items-center justify-center min-h-screen bg-[#F8FAFC] text-center px-4">
         <div className="bg-white shadow-lg rounded-2xl p-6 md:p-8 w-full max-w-md">
-          <h2 className="text-2xl font-bold text-[#181E4B] mb-4">
-            Hi, {loggedInUser.name}
-          </h2>
+          <p className="break-words text-center font-semibold">
+              Hi, {loggedInUser.name}
+          </p>
           <p className="text-gray-600 mb-4">You are already logged in.</p>
 
           {/* 👇 Replace this with real booking data */}
