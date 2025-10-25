@@ -14,7 +14,7 @@ export const metadata = {
   title: "Wanderlust Travel Hub",
   description: "Travel Agency, Tours and Travel",
   icons: {
-    icon: "images/wanderlust.png",
+    icon: "images/wanderlust.webp",
   },
 };
 

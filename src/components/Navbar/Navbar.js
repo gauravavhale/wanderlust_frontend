@@ -32,7 +32,7 @@ export const Navbar = () => {
       {/* Logo */}
       <div className="flex-shrink-0">
         <Image
-          src="/images/wanderlust.png"
+          src="/images/wanderlust.webp"
           height={50}
           width={50}
           alt="wanderlust"

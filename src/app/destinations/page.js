@@ -5,8 +5,8 @@ import Link from 'next/link'
 const Destination = () => {
 
   const Destinantion = [
-    { src:'/assets/bali.jpg',loc:'Bali'},{ src:'/assets/dubai.jpg',loc:'Dubai'},{ src:'/assets/italy.jpg',loc:'Italy'},{ src:'/assets/laddakh.jpg',loc:'Ladakh'},{ src:'/assets/maldives.jpg',loc:'Maldives'},{ src:'/assets/paris.jpg',loc:'Paris'},
-    { src:'/assets/srilanka.jpg',loc:'SriLanka'},{ src:'/assets/spain.jpg',loc:'Spain'},{ src:'/assets/brazil2.jpg',loc:'Brazil'},{ src:'/assets/giza2.jpg',loc:'Giza'},{ src:'/assets/switzerland2.jpg',loc:'Switzerland'},{ src:'/assets/sweden.jpg',loc:'Sweden'},
+    { src:'/assets/bali.webp',loc:'Bali'},{ src:'/assets/dubai.jpg',loc:'Dubai'},{ src:'/assets/italy.jpg',loc:'Italy'},{ src:'/assets/laddakh.jpg',loc:'Ladakh'},{ src:'/assets/maldives.webp',loc:'Maldives'},{ src:'/assets/paris.jpg',loc:'Paris'},
+    { src:'/assets/srilanka.jpg',loc:'SriLanka'},{ src:'/assets/spain.jpg',loc:'Spain'},{ src:'/assets/brazil2.webp',loc:'Brazil'},{ src:'/assets/giza2.jpg',loc:'Giza'},{ src:'/assets/switzerland2.jpg',loc:'Switzerland'},{ src:'/assets/sweden.jpg',loc:'Sweden'},
   ]
 
   return (
@@ -17,11 +17,11 @@ const Destination = () => {
           <Image src='/assets/pisa.jpg' fill className='object-cover' alt='landing'/>
         </div>
         <div className="hidden md:block">
-          <Image src='/assets/Rectangle 19290.png' fill className='object-cover' alt='landing'/>
+          <Image src='/assets/Rectangle 19290.webp' fill className='object-cover' alt='landing'/>
         </div>
         
         <div className='absolute flex justify-center items-center inset-0 '>
-          <Image src='/assets/Landscapes.png' className='w-[300px] h-auto sm:w-[400px]'  height={200} width={400} alt='landing' />
+          <Image src='/assets/Landscapes.webp' className='w-[300px] h-auto sm:w-[400px]'  height={200} width={400} alt='landing' />
         </div>
       </div>
       
@@ -33,7 +33,7 @@ const Destination = () => {
           <Link href={'/packages'} className='p-2 text-sm text-white bg-[#DF6951] rounded-sm'>View Packages</Link>
         </div>
         <div className='w-full md:w-1/2 flex justify-center md:justify-start mt-5 md:mt-0'>
-          <Image src={'/assets/Ellipse 626.png'} alt='IMG' width={200} height={200} className='w-[300px] h-[300px] md:w-[400px] md:h-[400px]'/>
+          <Image src={'/assets/Ellipse 626.webp'} alt='IMG' width={200} height={200} className='w-[300px] h-[300px] md:w-[400px] md:h-[400px]'/>
         </div>
       </div>
 

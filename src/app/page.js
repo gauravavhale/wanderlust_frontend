@@ -17,16 +17,16 @@ const Home = () => {
   }
 
   const Categoryies = [
-    { src: '/assets/001-tour-guide.png', title:'Guided Tour', para:'From iconic landmarks to hidden gems, our guided tours give you the perfect travel experience.' },
-    { src: '/assets/002-plane.png', title:'Best Flight Options', para:'From economy to first-class, our best flight options ensure comfort, convenience, and value.' },
-    { src: '/assets/003-pray.png', title:'Religious Tour', para:'Journey to sacred places and connect with your inner peace through our guided religious tours.' },
-    { src: '/assets/004-health-insurance.png', title:'Medical Insurance', para:'From minor mishaps to emergencies, our travel medical insurance keeps you safe wherever.' },
+    { src: '/assets/001-tour-guide.webp', title:'Guided Tour', para:'From iconic landmarks to hidden gems, our guided tours give you the perfect travel experience.' },
+    { src: '/assets/002-plane.webp', title:'Best Flight Options', para:'From economy to first-class, our best flight options ensure comfort, convenience, and value.' },
+    { src: '/assets/003-pray.webp', title:'Religious Tour', para:'Journey to sacred places and connect with your inner peace through our guided religious tours.' },
+    { src: '/assets/004-health-insurance.webp', title:'Medical Insurance', para:'From minor mishaps to emergencies, our travel medical insurance keeps you safe wherever.' },
   ]
 
   const Trendings = [
     { src:'/assets/switzerland1.webp', alt:'switzerlaand' , days:'8',people:'25',loc:'Switzerland',country:'Europe',price:'1,000',cutoff:'1200',desc:'Experience the breathtaking beauty of Switzerland where snow-capped Alps meet crystal-clear lakes, charming villages, and vibrant cities. From scenic train rides to world-class skiing' },
-    { src:'/assets/brazil1.png', alt:'Amazon' , days:'8',people:'30',loc:'Brazil',country:'Brazil',price:'1,223',cutoff:'1200',desc:'Discover the breathtaking beauty of the Amazon, the world’s largest rainforest. Cruise along its mighty river, encounter exotic wildlife, and immerse yourself in vibrant indigenous cultures.' },
-    { src:'/assets/giza1.png', alt:'Giza' , days:'8',people:'155',loc:'Giza',country:'Egypt',price:'1,200',cutoff:'1500',desc:'Discover the timeless wonders of Giza, home to the legendary Pyramids and the Great Sphinx. Walk through ancient history, marvel at breathtaking desert landscapes, and experience the magic of Egypt.' },
+    { src:'/assets/brazil1.webp', alt:'Amazon' , days:'8',people:'30',loc:'Brazil',country:'Brazil',price:'1,223',cutoff:'1200',desc:'Discover the breathtaking beauty of the Amazon, the world’s largest rainforest. Cruise along its mighty river, encounter exotic wildlife, and immerse yourself in vibrant indigenous cultures.' },
+    { src:'/assets/giza1.webp', alt:'Giza' , days:'8',people:'155',loc:'Giza',country:'Egypt',price:'1,200',cutoff:'1500',desc:'Discover the timeless wonders of Giza, home to the legendary Pyramids and the Great Sphinx. Walk through ancient history, marvel at breathtaking desert landscapes, and experience the magic of Egypt.' },
   ]
 
   return (
@@ -38,7 +38,7 @@ const Home = () => {
                 <Image src={'/assets/eifeltower.jpg'} alt='landing' fill className='object-cover' />
               </div>
               <div className="hidden md:block">
-                <Image src={'/assets/landing_image1.png'} alt='landing' fill className='object-cover' />
+                <Image src={'/assets/landing_image1.webp'} alt='landing' fill className='object-cover' />
               </div>
             
           
@@ -55,10 +55,10 @@ const Home = () => {
           </div>
 
           <div  ref={iconsSectionRef} className='flex justify-around p-4 bg-[#dcd9d9] gap-4'>
-            <Image src={"/assets/image 909.png"}  alt='Plane' className='w-16 h-8 sm:w-24 sm:h-12 md:w-32 md:h-16' height={75} width={171}></Image>
+            <Image src={"/assets/image 909.webp"}  alt='Plane' className='w-16 h-8 sm:w-24 sm:h-12 md:w-32 md:h-16' height={75} width={171}></Image>
             <Image src={"/assets/Mask group-1.png"} alt='Luggage' className='w-16 h-8 sm:w-24 sm:h-12 md:w-32 md:h-16' height={75} width={171}></Image>
             <Image src={"/assets/Mask group.png"} alt='hotel' className='w-16 h-8 sm:w-24 sm:h-12 md:w-32 md:h-16' height={75} width={171}></Image>
-            <Image src={"/assets/Mask group-2.png"} alt='Airbnb' className='w-16 h-8 sm:w-24 sm:h-12 md:w-32 md:h-16' height={75} width={171}></Image>
+            <Image src={"/assets/Mask group-2.webp"} alt='Airbnb' className='w-16 h-8 sm:w-24 sm:h-12 md:w-32 md:h-16' height={75} width={171}></Image>
           </div>
 
             <div>
@@ -85,7 +85,7 @@ const Home = () => {
 
             <div className='w-full h-full flex flex-col md:flex-row items-center mt-10'>
               <div className='w-[70vw] md:w-1/2 flex justify-end'>
-                <Image src={'/assets/image 50.png'} className='rounded-t-full' alt='cpl' width={300} height={400} />
+                <Image src={'/assets/image 50.webp'} className='rounded-t-full' alt='cpl' width={300} height={400} />
               </div>
               <div className='w-[70vw] mt-5 md:mt-0 md:w-1/2 content-center text-center md:ml-4 md:text-left'>
                 <p className='text-sm text-[#DF6951] font-bold'>HONEYMOON SPECIAL</p>
@@ -102,7 +102,7 @@ const Home = () => {
             </div>
 
             <div className=' relative h-[120px] md:h-[250px] lg:h-[300px]  mt-10'>
-              <Image src={'/assets/Sepratir.png'} alt='Statue' fill className='object-cover' />
+              <Image src={'/assets/Sepratir.webp'} alt='Statue' fill className='object-cover' />
             </div>
 
             <div className='w-full h-full my-10'>
@@ -160,7 +160,7 @@ const Home = () => {
                 <p className='text-sm text-[#DF6951] font-bold mb-4'>PROMOTION</p>
                 <h2 className='text-2xl font-bold text-[#181E4B]'>See What Our Clients Says<br/>About Us</h2>
                 <div className='m-4 bg-[#FFFFFF] rounded-xl p-4 pb-5 mb-4'>
-                  <Image src={'/assets/Ellipse 624.png'} height={100} width={100} className='mx-auto' alt='review'/>
+                  <Image src={'/assets/Ellipse 624.webp'} height={100} width={100} className='mx-auto' alt='review'/>
                   <p className='text-sm'>&quot;Our family trip to Bali was flawless. <br/>
                       The itinerary was wellbalanced with activities for both kids and adults.<br/>
                       The guided tours were informative and fun. <br/>
