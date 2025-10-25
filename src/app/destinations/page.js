@@ -14,7 +14,7 @@ const Destination = () => {
 
       <div className='w-full h-[90vh] relative'>
         <div className="md:hidden">
-          <Image src='/assets/pisa.jpg' fill className='object-cover' alt='landing'/>
+          <Image src='/assets/pisa.webp' fill className='object-cover' alt='landing'/>
         </div>
         <div className="hidden md:block">
           <Image src='/assets/Rectangle 19290.webp' fill className='object-cover' alt='landing'/>
