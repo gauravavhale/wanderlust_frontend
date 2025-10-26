@@ -1,7 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar/Navbar";
-import { Footer } from "@/components/Footer/Footer";
+import FooterWrapper from "./footerWrapper";
 import { Toaster } from 'react-hot-toast';
 
 const poppins = Poppins({
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
             },
           }}
         />
-        <Footer />
+        <FooterWrapper/>
       </body>
     </html>
   );
